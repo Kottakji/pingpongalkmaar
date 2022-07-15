@@ -8,17 +8,14 @@ backend:
 media_folder: src/assets
 public_folder: /assets
 collections:
-  - name: "pages"
-    label: "Pages"
-    label_singular: "Page" # Used in the UI, ie: "New Post"
-    folder: "content/blog"
+  - name: "home"
+    label: "Home"
+    label_singular: "Home" # Used in the UI, ie: "New Post"
+    folder: "content/home"
     create: true
     i18n: true
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" }
-      - { label: "Subtitle", name: "subtitle", widget: "string", required: false, i18n: true }
-      - { label: "Cover", name: "cover", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Tags", name: "tags", widget: "string", i18n: true }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
 

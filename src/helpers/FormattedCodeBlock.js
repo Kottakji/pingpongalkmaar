@@ -2,7 +2,6 @@ import { h } from 'preact';
 import { useState } from 'preact/hooks';
 
 import { vs } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import style from './style.css';
 
 export function FormattedCodeBlock(props) {
 	const [component, setComponent] = useState(null);
