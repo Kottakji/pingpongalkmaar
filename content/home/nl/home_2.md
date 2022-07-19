@@ -1,6 +1,5 @@
 ---
-type:
-  - news_left_and_image_right
+type: news_left_and_image_right
 title: Ping Pong Alkmaar
 image: /assets/home.jpeg
 ---
