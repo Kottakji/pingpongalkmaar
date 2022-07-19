@@ -23,6 +23,8 @@ module.exports = () => {
       info: info,
       edges: getEdges(info, "nl", "home"),
       slideshow: getEdges(info, "nl", "slideshow"),
+      membership: getEdges(info, "nl", "membership"),
+      schedule: getEdges(info, "nl", "schedule"),
     },
     { url: "/contact/" },
     { url: "/contact/success" },
