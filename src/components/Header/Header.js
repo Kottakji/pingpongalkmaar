@@ -93,7 +93,7 @@ function Links() {
               <button className={"btn btn-primary btn-xs rounded-xl text-sm"}>
                 <span className={"relative -top-2.5"}>Menu</span>
               </button>
-              <ul className="bg-base-content w-48">
+              <ul className="bg-base-content w-48 z-10">
                 {MENU.map(({ title, href }, index) => (
                   <li key={index}>
                     <a href={href}>{title}</a>

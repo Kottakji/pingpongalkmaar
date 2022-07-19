@@ -71,3 +71,18 @@ p, h1, h2, h3, h4, h5, h6 {
     @apply whitespace-nowrap;
 }
 
+h1 {
+    @apply text-5xl;
+    @apply font-bold;
+    @apply mb-6
+}
+
+h2 {
+    @apply text-4xl;
+    @apply font-normal;
+    @apply mb-4
+}
+
+p {
+    @apply text-base;
+}

@@ -3,6 +3,7 @@ import { useEffect } from "preact/hooks";
 import Header from "../../components/Header/Header";
 import { usePrerenderData } from "@preact/prerender-data-provider";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import Articles from "../../components/Articles/Articles";
 
 const Home = (props) => {
   console.log("props", props);
@@ -34,11 +35,7 @@ const Home = (props) => {
         <>
           <Header />
           <Slideshow slides={data.slideshow} />
-          {data.edges.map(({ details }) => (
-            <p className={"text-black"}>
-              {details.title} - {details.type}
-            </p>
-          ))}
+          <Articles articles={data.edges} />
         </>
       )}
     </>
