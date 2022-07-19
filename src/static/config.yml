@@ -35,7 +35,7 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Membership type", name: "membership_type", widget: "string", i18n: true }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Weekly sessions", name: "weekly_sessions", widget: "string", i18n: true }
       - { label: "Price per 6 months", name: "price_per_6_months", widget: "string", i18n: true }
       - { label: "Price per year", name: "price_per_year", widget: "string", i18n: true }

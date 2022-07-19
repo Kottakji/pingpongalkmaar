@@ -7,6 +7,10 @@ const properties = {
 };
 
 export default function Slideshow({ slides }) {
+  if (!slides) {
+    return <></>;
+  }
+
   return (
     <>
       <div className="slide-container h-[36rem]">

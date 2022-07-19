@@ -6,7 +6,6 @@ import Slideshow from "../../components/Slideshow/Slideshow";
 import Articles from "../../components/Articles/Articles";
 
 const Home = (props) => {
-  console.log("props", props);
   const [data, isLoading] = usePrerenderData(props);
   console.log("data", data);
 

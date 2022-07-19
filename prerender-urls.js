@@ -1,7 +1,6 @@
 const { generateFileList } = require("./src/crawler");
 const { join } = require("path");
 const fs = require("fs");
-const parseMD = require("parse-md").default;
 
 const info = generateFileList(join(__dirname, "content"));
 const getEdges = (info, language, folder) => {
