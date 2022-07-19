@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div
       className={
-        "flex flex-row justify-between w-full h-14 bg-base-content gap-2 px-4"
+        "flex flex-row justify-between w-full h-16 bg-base-content gap-2 px-4"
       }
     >
       <Links />

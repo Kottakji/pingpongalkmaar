@@ -21,6 +21,7 @@ export default class App extends Component {
         <div id="app">
           <Router onChange={this.handleRoute}>
             <Home path="/" />
+            <Slideshow path="/slideshow" />
             <NotFoundPage type="404" default />
           </Router>
         </div>
@@ -28,3 +29,6 @@ export default class App extends Component {
     );
   }
 }
+
+// Hack to share the slideshow
+function Slideshow() {}

@@ -9,7 +9,7 @@
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
     "build": "preact build --prerenderUrls ./prerender-urls.js",
-    "dev": "preact watch --no-prerender --prerenderUrls ./prerender-urls.js",
+    "dev": "preact watch --prerender --prerenderUrls ./prerender-urls.js",
     "lint": "eslint src",
     "test": "jest"
   },
@@ -49,6 +49,7 @@
     "preact-cli-plugin-netlify": "^1.6.0",
     "preact-render-to-string": "^5.1.10",
     "preact-router": "^3.0.1",
+    "react-slideshow-image": "^4.0.3",
     "tailwindcss": "^3.1.6"
   },
   "jest": {
