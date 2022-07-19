@@ -1,5 +1,6 @@
 import { h } from "preact";
 import { useEffect } from "preact/hooks";
+import Header from "../../components/Header/Header";
 
 const Home = () => {
   /**
@@ -20,7 +21,11 @@ const Home = () => {
     }
   }, []);
 
-  return <div>Home example</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Home;

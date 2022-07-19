@@ -4,5 +4,15 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')],
-}
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        lemonade: {
+          ...require("daisyui/src/colors/themes")["[data-theme=lemonade]"],
+          "base-content": "#000",
+        },
+      },
+    ],
+  },
+};

@@ -1,4 +1,7 @@
-# blog
+# Ping Pong Alkmaar
+
+## TODO
+- Send email to remove shop
 
 ## CLI Commands
 
