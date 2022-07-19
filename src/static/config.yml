@@ -15,7 +15,6 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "text"] }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
   - name: "home"
@@ -28,4 +27,4 @@ collections:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - { label: "Body", name: "body", widget: "text", i18n: true }
