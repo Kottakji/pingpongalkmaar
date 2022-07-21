@@ -1,5 +1,6 @@
 ---
 type: Image right / Text left
+sort: 2
 title: Pay & Play
 image: /assets/mini_pingpong.jpg
 ---
