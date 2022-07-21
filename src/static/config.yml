@@ -47,6 +47,15 @@ collections:
       - { label: "Weekly sessions", name: "weekly_sessions", widget: "string", i18n: true }
       - { label: "Price per 6 months", name: "price_per_6_months", widget: "string", i18n: false }
       - { label: "Price per year", name: "price_per_year", widget: "string", i18n: false }
+  - name: "downloads"
+    label: "Downloads"
+    label_singular: "Downloads"
+    folder: "content/downloads"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "File", name: "file", widget: "file", i18n: true }
   - name: "home"
     label: "Home"
     label_singular: "Home" # Used in the UI, ie: "New Post"
