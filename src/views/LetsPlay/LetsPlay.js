@@ -11,27 +11,8 @@ import PayToPlay from "../../components/PayToPlay/PayToPlay";
 import Footer from "../../components/Footer/Footer";
 import JoinUs from "../../components/JoinUs/JoinUs";
 
-export default function Home(props) {
+export default function LetsPlay(props) {
   const [data, isLoading] = usePrerenderData(props);
-  console.log("data", data);
-
-  /**
-   * Netlify CMS's accept invite link land on home page.
-   * This redirection takes it to the right place(/admin).
-   */
-
-  useEffect(() => {
-    if (
-      window !== undefined &&
-      window.location.href.includes("#invite_token")
-    ) {
-      const { href } = window.location;
-      window.location.href = `${href.substring(
-        0,
-        href.indexOf("#")
-      )}admin${href.substring(href.indexOf("#"))}`;
-    }
-  }, []);
 
   return (
     <>
@@ -40,13 +21,10 @@ export default function Home(props) {
         <>
           <Header language={data.language} />
           <Slideshow slides={data.slideshow} />
+          <JoinUs language={data.language} />
           <Articles articles={data.edges} />
-          <Schedule schedule={data.schedule} language={data.language} />
-          <Downloads
-            downloads={data.downloads}
-            language={data.language}
-            only={"agenda"}
-          />
+          <PayToPlay paytoplay={data.paytoplay} language={data.language} />
+          <Membership membership={data.membership} language={data.language} />
           <JoinUs language={data.language} />
           <Footer language={data.language} />
         </>

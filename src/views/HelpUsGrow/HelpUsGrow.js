@@ -9,29 +9,10 @@ import Downloads from "../../components/Downloads/Downloads";
 import Membership from "../../components/Membership/Membership";
 import PayToPlay from "../../components/PayToPlay/PayToPlay";
 import Footer from "../../components/Footer/Footer";
-import JoinUs from "../../components/JoinUs/JoinUs";
 
-export default function Home(props) {
+export default function HelpUsGrow(props) {
   const [data, isLoading] = usePrerenderData(props);
   console.log("data", data);
-
-  /**
-   * Netlify CMS's accept invite link land on home page.
-   * This redirection takes it to the right place(/admin).
-   */
-
-  useEffect(() => {
-    if (
-      window !== undefined &&
-      window.location.href.includes("#invite_token")
-    ) {
-      const { href } = window.location;
-      window.location.href = `${href.substring(
-        0,
-        href.indexOf("#")
-      )}admin${href.substring(href.indexOf("#"))}`;
-    }
-  }, []);
 
   return (
     <>
@@ -41,13 +22,11 @@ export default function Home(props) {
           <Header language={data.language} />
           <Slideshow slides={data.slideshow} />
           <Articles articles={data.edges} />
-          <Schedule schedule={data.schedule} language={data.language} />
           <Downloads
             downloads={data.downloads}
             language={data.language}
-            only={"agenda"}
+            only={"development_plan"}
           />
-          <JoinUs language={data.language} />
           <Footer language={data.language} />
         </>
       )}

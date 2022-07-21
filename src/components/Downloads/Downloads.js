@@ -1,4 +1,7 @@
-export default function Downloads({ language, downloads }) {
+export default function Downloads({ language, downloads, only = null }) {
+  if (only) {
+    downloads = downloads.filter((d) => only === d.details.type);
+  }
   console.log("downloads", downloads);
 
   const getTitle = (download) => {

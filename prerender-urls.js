@@ -9,6 +9,13 @@ const getEdges = (info, language, folder) => {
       .find(({ id }) => id === folder)
       .nodes.find(({ id }) => id === language)
       .edges.map((edge) => {
+        // Append details from base language (NL)
+        const original = info.nodes
+          .find(({ id }) => id === folder)
+          .nodes.find(({ id }) => id === "nl")
+          .edges.find(({ id }) => id === edge.id);
+        edge.details = { ...original.details, ...edge.details };
+
         edge.body = fs
           .readFileSync(join("content", folder, language, edge.id), "utf-8")
           .replace(/---(.*\n)*---/, "");
@@ -19,33 +26,37 @@ const getEdges = (info, language, folder) => {
   }
 };
 
-module.exports = () => {
-  return [
-    {
-      url: "/",
-      language: "nl",
-      info: info,
-      edges: getEdges(info, "nl", "home"),
-      slideshow: getEdges(info, "nl", "slideshow"),
-      membership: getEdges(info, "nl", "membership"),
-      paytoplay: getEdges(info, "nl", "paytoplay"),
-      schedule: getEdges(info, "nl", "schedule"),
-      downloads: getEdges(info, "nl", "downloads"),
-    },
-    { url: "/contact/" },
-    { url: "/contact/success" },
-  ];
+const getRoute = (url, language, name) => {
+  return {
+    url: url,
+    language: language,
+    info: info,
+    edges: getEdges(info, language, name),
+    slideshow: getEdges(info, language, "slideshow"),
+    membership: getEdges(info, language, "membership"),
+    paytoplay: getEdges(info, language, "paytoplay"),
+    schedule: getEdges(info, language, "schedule"),
+    downloads: getEdges(info, language, "downloads"),
+  };
 };
 
-// // adding all blog pages
-// pages.push(...blogs.edges.map(blog => {
-//   const data = fs.readFileSync(join('content', 'blog', blog.id), 'utf-8').replace(/---(.*\n)*---/, '');
-//   return {
-//     url: `/blog/${blog.id}`,
-//     seo: blog.details,
-//     data: {
-//       details: blog.details,
-//       content: data
-//     }
-//   };
-// }));
+module.exports = () => {
+  let routes = [];
+  routes.push(getRoute("/", "nl", "home"));
+
+  ["nl", "en"].map((language) => {
+    routes.push(getRoute(`/${language}`, language, "home"));
+    routes.push(getRoute(`/${language}/news`, language, "news"));
+    routes.push(getRoute(`/${language}/lets-play`, language, "lets_play"));
+    routes.push(
+      getRoute(`/${language}/lets-have-fun`, language, "lets_have_fun")
+    );
+    routes.push(
+      getRoute(`/${language}/help-us-grow`, language, "help_us_grow")
+    );
+    routes.push(getRoute(`/${language}/schools`, language, "schools"));
+    routes.push(getRoute(`/${language}/about-us`, language, "about_us"));
+  });
+
+  return routes;
+};

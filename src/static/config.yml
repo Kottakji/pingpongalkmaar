@@ -57,10 +57,77 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "File", name: "file", widget: "file", i18n: true }
+      - { label: "Type", name: "type", widget: "select", i18n: true, options: ["agenda", "development_plan"] }
   - name: "home"
     label: "Home"
-    label_singular: "Home" # Used in the UI, ie: "New Post"
+    label_singular: "Home article" # Used in the UI, ie: "New Post"
     folder: "content/home"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
+      - { label: "Body", name: "body", widget: "text", i18n: true }
+  - name: "news"
+    label: "News"
+    label_singular: "News article" # Used in the UI, ie: "New Post"
+    folder: "content/news"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
+      - { label: "Body", name: "body", widget: "text", i18n: true }
+  - name: "lets_play"
+    label: "Let's play"
+    label_singular: "Let's play article" # Used in the UI, ie: "New Post"
+    folder: "content/lets_play"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
+      - { label: "Body", name: "body", widget: "text", i18n: true }
+  - name: "lets_have_fun"
+    label: "Let's have fun"
+    label_singular: "Let's have fun article" # Used in the UI, ie: "New Post"
+    folder: "content/lets_have_fun"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
+      - { label: "Body", name: "body", widget: "text", i18n: true }
+  - name: "help_us_grow"
+    label: "Help us grow"
+    label_singular: "Help us grow article" # Used in the UI, ie: "New Post"
+    folder: "content/help_us_grow"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
+      - { label: "Body", name: "body", widget: "text", i18n: true }
+  - name: "schools"
+    label: "Schools"
+    label_singular: "Schools article" # Used in the UI, ie: "New Post"
+    folder: "content/schools"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
+      - { label: "Body", name: "body", widget: "text", i18n: true }
+  - name: "about_us"
+    label: "About us"
+    label_singular: "About us article" # Used in the UI, ie: "New Post"
+    folder: "content/about_us"
     create: true
     i18n: true
     fields:
