@@ -1,6 +1,6 @@
 ---
 type: Image right / Text left
-sort: 6
+sort: 7
 title: Competitiespelers
 image: /assets/competition.jpg
 ---
