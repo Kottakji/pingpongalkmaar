@@ -1,5 +1,6 @@
 ---
 type: Image right / Text left
+sort: 4
 title: Community
 image: /assets/community.jpg
 ---

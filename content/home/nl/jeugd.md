@@ -1,5 +1,6 @@
 ---
 type: Image left / Text right
+sort: 3
 title: Jeugd
 image: /assets/youth.jpg
 ---

@@ -1,5 +1,6 @@
 ---
 type: Image right / Text left
+sort: 0
 title: Ping Pong Alkmaar
 image: /assets/home.jpeg
 ---

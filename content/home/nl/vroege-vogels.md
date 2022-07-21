@@ -1,5 +1,6 @@
 ---
 type: Image left / Text right
+sort: 5
 title: Vroege vogels
 image: /assets/early_birds.png
 ---
