@@ -4,21 +4,26 @@ const fs = require("fs");
 
 const info = generateFileList(join(__dirname, "content"));
 const getEdges = (info, language, folder) => {
-  return info.nodes
-    .find(({ id }) => id === folder)
-    .nodes.find(({ id }) => id === language)
-    .edges.map((edge) => {
-      edge.body = fs
-        .readFileSync(join("content", folder, language, edge.id), "utf-8")
-        .replace(/---(.*\n)*---/, "");
-      return edge;
-    });
+  try {
+    return info.nodes
+      .find(({ id }) => id === folder)
+      .nodes.find(({ id }) => id === language)
+      .edges.map((edge) => {
+        edge.body = fs
+          .readFileSync(join("content", folder, language, edge.id), "utf-8")
+          .replace(/---(.*\n)*---/, "");
+        return edge;
+      });
+  } catch (e) {
+    return [];
+  }
 };
 
 module.exports = () => {
   return [
     {
       url: "/",
+      language: "nl",
       info: info,
       edges: getEdges(info, "nl", "home"),
       slideshow: getEdges(info, "nl", "slideshow"),

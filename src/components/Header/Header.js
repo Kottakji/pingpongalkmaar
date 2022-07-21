@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ language }) {
   return (
     <div
       className={
@@ -15,11 +15,11 @@ export default function Header() {
 function Icons() {
   return (
     <div className={"flex flex-col justify-center"}>
-      <div class={"flex justify-center gap-1"}>
+      <div className={"flex justify-center gap-1"}>
         <a
           href={"https://msng.link/o/?0681362917=wa"}
           target={"_blank"}
-          class={"w-4 h-4"}
+          className={"w-4 h-4"}
         >
           <svg
             stroke="currentColor"

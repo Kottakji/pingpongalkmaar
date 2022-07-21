@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import { usePrerenderData } from "@preact/prerender-data-provider";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Articles from "../../components/Articles/Articles";
+import Schedule from "../../components/Schedule/Schedule";
 
 const Home = (props) => {
   const [data, isLoading] = usePrerenderData(props);
@@ -32,9 +33,10 @@ const Home = (props) => {
       {isLoading && <p>Loading...</p>}
       {!isLoading && (
         <>
-          <Header />
+          <Header language={data.language} />
           <Slideshow slides={data.slideshow} />
           <Articles articles={data.edges} />
+          <Schedule schedule={data.schedule} language={data.language} />
         </>
       )}
     </>

@@ -25,9 +25,17 @@ collections:
     i18n: true
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Day", name: "day", widget: "string", i18n: true }
-      - { label: "Type", name: "type", widget: "string", i18n: true }
+      - { label: "Day", name: "day", widget: "select", i18n: false, options: ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]}
       - { label: "Time", name: "time", widget: "string", i18n: true }
+  - name: "paytoplay"
+    label: "Pay to Play"
+    label_singular: "Pay to play"
+    folder: "content/paytoplay"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Price", name: "price", widget: "string", i18n: false }
   - name: "memberschip"
     label: "Memberschip"
     label_singular: "Membership"
@@ -37,8 +45,8 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Weekly sessions", name: "weekly_sessions", widget: "string", i18n: true }
-      - { label: "Price per 6 months", name: "price_per_6_months", widget: "string", i18n: true }
-      - { label: "Price per year", name: "price_per_year", widget: "string", i18n: true }
+      - { label: "Price per 6 months", name: "price_per_6_months", widget: "string", i18n: false }
+      - { label: "Price per year", name: "price_per_year", widget: "string", i18n: false }
   - name: "home"
     label: "Home"
     label_singular: "Home" # Used in the UI, ie: "New Post"
