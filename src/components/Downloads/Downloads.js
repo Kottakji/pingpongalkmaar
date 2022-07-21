@@ -5,11 +5,7 @@ export default function Downloads({ language, downloads, only = null }) {
   console.log("downloads", downloads);
 
   const getTitle = (download) => {
-    if (language === "nl") {
-      return `Download de ${download.details.title}`;
-    }
-
-    return `Download the ${download.details.title}`;
+    return download.details.title;
   };
 
   return (
