@@ -77,7 +77,7 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
@@ -89,7 +89,7 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
@@ -101,7 +101,7 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
@@ -113,7 +113,7 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
@@ -125,7 +125,7 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
@@ -137,7 +137,7 @@ collections:
     create: true
     i18n: true
     fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["news_left_and_image_right", "news_right_and_image_left", "centered_text", "only_text"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }

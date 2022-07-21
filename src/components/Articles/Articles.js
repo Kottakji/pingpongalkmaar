@@ -1,7 +1,7 @@
 import Article from "./Article";
 
 export default function Articles({ articles }) {
-  articles = articles.sort((a, b) => a.sort - b.sort);
+  articles = articles.sort((a, b) => (a.sort ?? 999) - (b.sort ?? 999));
   console.log("articles", articles);
 
   return (
