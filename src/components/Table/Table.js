@@ -1,6 +1,6 @@
 export default function Table({ title, items, keys, headers = null }) {
   return (
-    <div className="flex justify-center w-full my-4">
+    <div className="flex justify-center w-full my-12">
       <div className={"flex flex-col justify-center gap-4"}>
         <h2 className={"text-black text-center"}>{title}</h2>
         <table className="table">

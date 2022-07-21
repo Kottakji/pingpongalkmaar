@@ -29,6 +29,7 @@ module.exports = () => {
       slideshow: getEdges(info, "nl", "slideshow"),
       membership: getEdges(info, "nl", "membership"),
       schedule: getEdges(info, "nl", "schedule"),
+      downloads: getEdges(info, "nl", "downloads"),
     },
     { url: "/contact/" },
     { url: "/contact/success" },

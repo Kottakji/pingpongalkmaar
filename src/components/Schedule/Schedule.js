@@ -1,4 +1,5 @@
 import Table from "../Table/Table";
+import moment from "moment";
 
 const SELECTABLE_DATES = [
   "maandag",
@@ -23,11 +24,14 @@ const EN_DATES = {
 export default function Schedule({ language, schedule }) {
   let title =
     language === "nl" ? "Weekschema lessen" : "Weekly session schedule";
+
   let data = schedule.map((s) => {
     return {
       title: s.details.title,
       day: s.details.day,
-      time: `${s.details.from} - ${s.details.until}`,
+      time: `${moment(s.details.from).format("HH:mm")} - ${moment(
+        s.details.until
+      ).format("HH:mm")}`,
     };
   });
 
