@@ -40,6 +40,7 @@ export default function Home(props) {
         <>
           <Header language={data.language} />
           <Slideshow slides={data.slideshow} />
+          <JoinUs language={data.language} />
           <Articles articles={data.edges} />
           <Schedule schedule={data.schedule} language={data.language} />
           <Downloads
@@ -47,7 +48,6 @@ export default function Home(props) {
             language={data.language}
             only={"agenda"}
           />
-          <JoinUs language={data.language} />
           <Footer language={data.language} />
         </>
       )}

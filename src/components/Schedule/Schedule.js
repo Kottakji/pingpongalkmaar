@@ -22,6 +22,10 @@ const EN_DATES = {
 };
 
 export default function Schedule({ language, schedule }) {
+  schedule = schedule.sort(
+    (a, b) => (a.details.sort ?? 999) - (b.details.sort ?? 999)
+  );
+
   let title =
     language === "nl" ? "Weekschema lessen" : "Weekly session schedule";
 

@@ -2,6 +2,10 @@ import Table from "../Table/Table";
 import SimpleTable from "../SimpleTable/SimpleTable";
 
 export default function PayToPlay({ paytoplay }) {
+  paytoplay = paytoplay.sort(
+    (a, b) => (a.details.sort ?? 999) - (b.details.sort ?? 999)
+  );
+
   let headers = [];
   let items = [];
 
