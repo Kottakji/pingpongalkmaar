@@ -1,5 +1,5 @@
 ---
-type: centered_text
+type: Centered text (no image)
 title: Bestuursleden
 ---
 Voorzitter - Rob van der Horst rob@pingpongalkmaar.nl

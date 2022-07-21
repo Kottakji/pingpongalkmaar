@@ -1,5 +1,5 @@
 ---
-type: news_left_and_image_right
+type: Image right / Text left
 title: Community
 image: /assets/community.jpg
 ---

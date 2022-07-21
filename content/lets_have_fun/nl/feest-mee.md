@@ -1,5 +1,5 @@
 ---
-type: news_right_and_image_left
+type: Image left / Text right
 title: Feest mee
 image: /assets/company.jpg
 ---

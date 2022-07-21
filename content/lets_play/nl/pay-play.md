@@ -1,5 +1,5 @@
 ---
-type: news_left_and_image_right
+type: Image right / Text left
 title: Pay & Play
 image: /assets/mini_pingpong.jpg
 ---

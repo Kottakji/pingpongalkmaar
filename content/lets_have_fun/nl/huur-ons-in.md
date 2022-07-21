@@ -1,5 +1,5 @@
 ---
-type: news_left_and_image_right
+type: Image right / Text left
 title: Huur ons in
 image: /assets/lets_play.jpg
 ---
