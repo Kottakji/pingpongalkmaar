@@ -1,5 +1,6 @@
 ---
 type: Image right / Text left
+sort: 2
 title: Huur ons in
 image: /assets/lets_play.jpg
 ---
