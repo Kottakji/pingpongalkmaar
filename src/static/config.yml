@@ -16,6 +16,7 @@ collections:
     i18n: true
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
   - name: "schedule"
     label: "Schedule"
@@ -36,6 +37,7 @@ collections:
     i18n: true
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Price", name: "price", widget: "string", i18n: false }
   - name: "membership"
     label: "Membership"
@@ -45,6 +47,7 @@ collections:
     i18n: true
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
       - { label: "Weekly sessions", name: "weekly_sessions", widget: "string", i18n: false }
       - { label: "Price per 6 months", name: "price_per_6_months", widget: "string", i18n: false }
       - { label: "Price per year", name: "price_per_year", widget: "string", i18n: false }
