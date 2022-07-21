@@ -60,7 +60,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "File", name: "file", widget: "file", i18n: true }
-      - { label: "Type", name: "type", widget: "select", i18n: true, options: ["agenda", "development_plan"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["agenda", "development_plan"] }
   - name: "home"
     label: "Articles - Home"
     label_singular: "Home article" # Used in the UI, ie: "New Post"
