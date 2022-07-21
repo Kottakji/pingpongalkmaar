@@ -14,7 +14,11 @@ export default function Downloads({ language, downloads, only = null }) {
         <h2 className={"text-black text-center"}>Downloads</h2>
         {downloads.map((download) => (
           <p className={"text-center"}>
-            <a href={""} target={"_blank"} className={"btn gap-4"}>
+            <a
+              href={`${download.details.file}`}
+              target={"_blank"}
+              className={"btn gap-4"}
+            >
               {getTitle(download)}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
