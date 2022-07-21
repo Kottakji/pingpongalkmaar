@@ -62,5 +62,9 @@ export default function Schedule({ language, schedule }) {
 
   info = info.flat();
 
+  if (!info.length) {
+    return <></>;
+  }
+
   return <Table title={title} keys={["day", "title", "time"]} items={info} />;
 }

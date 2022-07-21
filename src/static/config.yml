@@ -26,8 +26,8 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Day", name: "day", widget: "select", i18n: false, options: ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]}
-      - { label: "From", name: "from", widget: "datetime", i18n: false, date_format: false, time_format: 'hh:mm' }
-      - { label: "Until", name: "until", widget: "datetime", i18n: false, date_format: false, time_format: 'hh:mm' }
+      - { label: "From", name: "from", widget: "datetime", i18n: false, date_format: false, time_format: 'HH:mm' }
+      - { label: "Until", name: "until", widget: "datetime", i18n: false, date_format: false, time_format: 'HH:mm' }
   - name: "paytoplay"
     label: "Pay to Play"
     label_singular: "Pay to play"
@@ -45,7 +45,7 @@ collections:
     i18n: true
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Weekly sessions", name: "weekly_sessions", widget: "string", i18n: true }
+      - { label: "Weekly sessions", name: "weekly_sessions", widget: "string", i18n: false }
       - { label: "Price per 6 months", name: "price_per_6_months", widget: "string", i18n: false }
       - { label: "Price per year", name: "price_per_year", widget: "string", i18n: false }
   - name: "downloads"
