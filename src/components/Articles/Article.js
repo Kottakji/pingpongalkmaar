@@ -28,7 +28,7 @@ export default function Article({ article }) {
 
 function ImageRight({ title, body, image }) {
   return (
-    <div className={"flex flex-row w-full gap-4 flex-row-reverse"}>
+    <div className={"flex flex-col sm:flex-row-reverse w-full gap-4"}>
       <Content image={image} body={body} title={title} />
     </div>
   );
@@ -36,7 +36,7 @@ function ImageRight({ title, body, image }) {
 
 function ImageLeft({ title, body, image }) {
   return (
-    <div className={"flex flex-row w-full gap-4"}>
+    <div className={"flex flex-col sm:flex-row w-full gap-4"}>
       <Content image={image} body={body} title={title} />
     </div>
   );
@@ -45,14 +45,14 @@ function ImageLeft({ title, body, image }) {
 function Content({ title, body, image }) {
   return (
     <>
-      <div className={"w-1/2 flex flex-col justify-center p-16"}>
+      <div className={"flex flex-col justify-center p-16"}>
         <img
           src={image}
           alt={title}
-          className={"w-full max-h-full max-h-[20rem] object-contain"}
+          className={"max-w-[20rem] max-h-full max-h-[20rem] object-contain"}
         />
       </div>
-      <div className={"w-1/2 p-12 flex flex-col justify-center"}>
+      <div className={"p-12 flex flex-col justify-center flex-wrap"}>
         <h2 className={"text-black"}>{title}</h2>
         <p className={"text-gray-500 whitespace-pre-line"}>{body}</p>
       </div>
