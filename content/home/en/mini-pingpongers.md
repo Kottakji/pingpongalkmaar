@@ -1,5 +1,5 @@
 ---
-title: Mini Pingpongers
+title: Mini
 image: /assets/mini_pingpong.jpg
 ---
-Je bent nooit te jong voor ping pong! Een les speciaal voor jonge spelers tussen de 4 en 7 jaar. De lessen zijn gericht op het ontwikkelen van motorische vaardigheden en coördinatie. We oefenen door verschillende spelletjes te doen waarbij we gekke materialen gebruikt zoals ballonnen paraplu’s.
+This session is for children ages between 4 and 7 years. It focuses on using ping pong to develop basic motoric movement and coordination. Lots of fun games using different materials from balloons to umbrella’s!
