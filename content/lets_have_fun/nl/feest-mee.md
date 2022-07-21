@@ -1,6 +1,6 @@
 ---
 type: Image left / Text right
-sort: 0
+sort: 1
 title: Feest mee
 image: /assets/company.jpg
 ---
