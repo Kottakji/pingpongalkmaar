@@ -1,5 +1,6 @@
 ---
 type: Image left / Text right
+sort: 1
 title: Mini Pingpongers
 image: /assets/mini_pingpong.jpg
 ---
