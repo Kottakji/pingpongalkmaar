@@ -1,5 +1,6 @@
 ---
 type: Centered text (no image)
+sort: 4
 title: Groei
 ---
 Coaching op het hoogste niveau.
