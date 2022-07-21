@@ -1,15 +1,9 @@
 ---
-title: Ping Pong Alkmaar
+title: Ping Pong Alkmaar celebrates a wonderful three years of growth
 image: /assets/home.jpeg
 ---
-Ping Pong Alkmaar is de meest enthousiaste tafeltennisclub van Alkmaar en een ambitieuze sportvereniging waar iedereen welkom is.
+... since the club was set up in May 2018. The club has delivered multiple new initiatives over this time with its outreach programmes reaching out to over 6000 people in Alkmaar..
 
-Sinds de oprichting in mei 2018 zijn we enorm gegroeid. De club heeft verschillende nieuwe initiatieven opgezet en we hebben met onze programma’s waarmee we de wijk ingaan meer dan 6000 mensen in Alkmaar bereikt.
+The heart of the club belongs to over 50 regular players of which over 30 are junior players both boys and girls ranging from 5 to 16 years old. Our players can access up to 5 training sessions per week.
 
-De kern van onze vereniging bestaat uit 50 vaste spelers waarvan 30 jongens en meiden tussen de 5 en 16 jaar. Als lid van onze club kun je 5 dagen in de week komen trainingen.
-
-Mark Smith is de oprichter van Ping Pong Alkmaar. Hij is de hoofdcoach en jaagt nieuwe ontwikkelingen binnen de vereniging aan.
-
-“Het is geweldig om elke dag bezig te zijn met Ping Pong Alkmaar. We zijn een snel groeiende tafeltennis club met stevige wortels in de lokale gemeenschap. Samen met een pro-actief en ambitieus team bouwen we aan een nieuw soort sportvereniging omdat we geloven in de kracht van sport als verbindende factor en de positief invloed daarvan op het leven van mensen.”
-
-Doe je ook met ons mee? Iedereen is welkom!
+Mark Smith the founder of the club heads the coaching and development sections of the club. ” Its fantastic to be heading Ping Pong Alkmaar, a rapidly developing community based table tennis club. Together with a pro-active and ambitious management team we are developing a club that recognises the benefits of ‘sport for development’ and how it can positively influence people’s lives.”
