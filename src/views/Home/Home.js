@@ -8,6 +8,7 @@ import Schedule from "../../components/Schedule/Schedule";
 import Downloads from "../../components/Downloads/Downloads";
 import Membership from "../../components/Membership/Membership";
 import PayToPlay from "../../components/PayToPlay/PayToPlay";
+import Footer from "../../components/Footer/Footer";
 
 const Home = (props) => {
   const [data, isLoading] = usePrerenderData(props);
@@ -43,6 +44,7 @@ const Home = (props) => {
           <Downloads downloads={data.downloads} language={data.language} />
           <Membership membership={data.membership} language={data.language} />
           <PayToPlay paytoplay={data.paytoplay} language={data.language} />
+          <Footer language={data.language} />
         </>
       )}
     </>
