@@ -1,4 +1,4 @@
 ---
-title: Girls
+title: Meisjes
 price: € 3,50
 ---
