@@ -27,7 +27,7 @@ export default function Schedule({ language, schedule }) {
     return {
       title: s.details.title,
       day: s.details.day,
-      time: s.details.time,
+      time: `${s.details.from} - ${s.details.until}`,
     };
   });
 
