@@ -1,5 +1,6 @@
 ---
-type: Image right / Text left
+type: news_left_and_image_right
+sort: 0
 title: Proefles altijd gratis
 image: /assets/outdoor.jpg
 ---
