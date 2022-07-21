@@ -28,6 +28,7 @@ module.exports = () => {
       edges: getEdges(info, "nl", "home"),
       slideshow: getEdges(info, "nl", "slideshow"),
       membership: getEdges(info, "nl", "membership"),
+      paytoplay: getEdges(info, "nl", "paytoplay"),
       schedule: getEdges(info, "nl", "schedule"),
       downloads: getEdges(info, "nl", "downloads"),
     },
