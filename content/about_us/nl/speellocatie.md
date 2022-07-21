@@ -1,5 +1,6 @@
 ---
 type: Image right / Text left
+sort: 7
 title: Speellocatie
 image: /assets/about_club_2.jpg
 ---
