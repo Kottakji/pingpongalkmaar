@@ -1,5 +1,6 @@
 ---
 type: Image right / Text left
+sort: 2
 title: Speciaal voor meiden
 image: /assets/girls.jpg
 ---
