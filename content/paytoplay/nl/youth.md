@@ -1,4 +1,4 @@
 ---
-title: Youth
+title: Jeugd
 price: € 3,50
 ---
