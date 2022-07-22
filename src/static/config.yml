@@ -14,6 +14,7 @@ collections:
     folder: "content/slideshow"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -24,6 +25,7 @@ collections:
     folder: "content/schedule"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}} - {{day}} - {{from}} - {{until}}"
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Day", name: "day", widget: "select", i18n: false, options: ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]}
@@ -35,6 +37,7 @@ collections:
     folder: "content/paytoplay"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}} - {{price}}"
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -45,6 +48,7 @@ collections:
     folder: "content/membership"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}} - {{weekly_sessions}} - {{price_per_6_months}} - {{price_per_year}}"
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -57,6 +61,7 @@ collections:
     folder: "content/downloads"
     create: true
     i18n: true
+    summary: "#{{type}} - {{title}}"
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "File", name: "file", widget: "file", i18n: true }
@@ -67,6 +72,7 @@ collections:
     folder: "content/home"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -79,6 +85,7 @@ collections:
     folder: "content/news"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -91,6 +98,7 @@ collections:
     folder: "content/lets_play"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -103,6 +111,7 @@ collections:
     folder: "content/lets_have_fun"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -115,6 +124,7 @@ collections:
     folder: "content/help_us_grow"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -127,6 +137,7 @@ collections:
     folder: "content/schools"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -139,6 +150,7 @@ collections:
     folder: "content/about_us"
     create: true
     i18n: true
+    summary: "#{{sort}} - {{title}}"
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
