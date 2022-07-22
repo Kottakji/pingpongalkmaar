@@ -15,6 +15,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -25,7 +26,8 @@ collections:
     folder: "content/schedule"
     create: true
     i18n: true
-    summary: "#{{sort}} - {{title}} - {{day}} - {{from}} - {{until}}"
+    summary: "#{{day}} - {{title}}"
+    sortable_fields: ["day"]
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Day", name: "day", widget: "select", i18n: false, options: ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]}
@@ -38,6 +40,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}} - {{price}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -48,7 +51,8 @@ collections:
     folder: "content/membership"
     create: true
     i18n: true
-    summary: "#{{sort}} - {{title}} - {{weekly_sessions}} - {{price_per_6_months}} - {{price_per_year}}"
+    summary: "#{{sort}} - {{title}} {{weekly_sessions}} {{price_per_6_months}} {{price_per_year}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -62,6 +66,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{type}} - {{title}}"
+    sortable_fields: ["type"]
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "File", name: "file", widget: "file", i18n: true }
@@ -73,6 +78,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -86,6 +92,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -99,6 +106,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -112,6 +120,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -125,6 +134,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -138,6 +148,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
@@ -151,6 +162,7 @@ collections:
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
     fields:
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
       - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
