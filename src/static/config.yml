@@ -1,3 +1,26 @@
+parameters:
+  default: &default
+    create: true
+    i18n: true
+    summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
+  - &title { label: "Title", name: "title", widget: "string", i18n: true }
+  - &sort { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
+  - &from { label: "From", name: "from", widget: "datetime", i18n: false, date_format: false, time_format: 'HH:mm' }
+  - &until { label: "Until", name: "until", widget: "datetime", i18n: false, date_format: false, time_format: 'HH:mm' }
+  - &day { label: "Day", name: "day", widget: "select", i18n: false, options: ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]}
+  - &price { label: "Price", name: "price", widget: "string", i18n: false }
+  - &image{ label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
+  - &body{ label: "Body", name: "body", widget: "text", i18n: true }
+  - &type { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
+  - &file { label: "File", name: "file", widget: "file", i18n: true }
+  article: &article
+    - *type
+    - *sort
+    - *title
+    - *image
+    - *body
+
 i18n:
   structure: multiple_folders
   locales: [ nl, en ]
@@ -8,84 +31,67 @@ backend:
 media_folder: src/assets
 public_folder: /assets
 collections:
-  - name: "slideshow"
+  - <<: *default
+    name: "slideshow"
     label: "Slideshow"
     label_singular: "Slide"
     folder: "content/slideshow"
-    create: true
-    i18n: true
-    summary: "#{{sort}} - {{title}}"
-    sortable_fields: ["sort"]
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-  - name: "schedule"
+      - *title
+      - *sort
+      - *image
+  - <<: *default
+    name: "schedule"
     label: "Schedule"
     label_singular: "Schedule"
     folder: "content/schedule"
-    create: true
-    i18n: true
     summary: "#{{day}} - {{title}}"
     sortable_fields: ["day"]
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Day", name: "day", widget: "select", i18n: false, options: ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]}
-      - { label: "From", name: "from", widget: "datetime", i18n: false, date_format: false, time_format: 'HH:mm' }
-      - { label: "Until", name: "until", widget: "datetime", i18n: false, date_format: false, time_format: 'HH:mm' }
-  - name: "paytoplay"
+      - *title
+      - *day
+      - *from
+      - *until
+  - <<: *default
+    name: "paytoplay"
     label: "Pay to Play"
     label_singular: "Pay to play"
     folder: "content/paytoplay"
-    create: true
-    i18n: true
     summary: "#{{sort}} - {{title}} - {{price}}"
-    sortable_fields: ["sort"]
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Price", name: "price", widget: "string", i18n: false }
-  - name: "membership"
+      - *title
+      - *sort
+      - *price
+  - <<: *default
+    name: "membership"
     label: "Membership"
     label_singular: "Membership"
     folder: "content/membership"
-    create: true
-    i18n: true
-    summary: "#{{sort}} - {{title}} {{weekly_sessions}} {{price_per_6_months}} {{price_per_year}}"
-    sortable_fields: ["sort"]
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
+      - *title
+      - *sort
       - { label: "Weekly sessions", name: "weekly_sessions", widget: "string", i18n: false }
       - { label: "Price per 6 months", name: "price_per_6_months", widget: "string", i18n: false }
       - { label: "Price per year", name: "price_per_year", widget: "string", i18n: false }
-  - name: "downloads"
+  - <<: *default
+    name: "downloads"
     label: "Downloads"
     label_singular: "Downloads"
     folder: "content/downloads"
-    create: true
-    i18n: true
     summary: "#{{type}} - {{title}}"
     sortable_fields: ["type"]
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "File", name: "file", widget: "file", i18n: true }
+      - *title
+      - *file
       - { label: "Type", name: "type", widget: "select", i18n: false, options: ["agenda", "development_plan"] }
-  - name: "home"
+  - <<: *default
+    name: "home"
     label: "Articles - Home"
     label_singular: "Home article" # Used in the UI, ie: "New Post"
     folder: "content/home"
-    create: true
-    i18n: true
-    summary: "#{{sort}} - {{title}}"
-    sortable_fields: ["sort"]
-    fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate", hint: "If you selected 'Centered text' as type, no image is shown." }
-      - { label: "Body", name: "body", widget: "text", i18n: true }
-  - name: "news"
+    fields: *article
+  - <<: *default
+    name: "news"
     label: "Articles - News"
     label_singular: "News article" # Used in the UI, ie: "New Post"
     folder: "content/news"
@@ -93,13 +99,9 @@ collections:
     i18n: true
     summary: "#{{sort}} - {{title}}"
     sortable_fields: ["sort"]
-    fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Body", name: "body", widget: "text", i18n: true }
-  - name: "lets_play"
+    fields: *article
+  - <<: *default
+    name: "lets_play"
     label: "Articles - Let's play"
     label_singular: "Let's play article" # Used in the UI, ie: "New Post"
     folder: "content/lets_play"
@@ -107,13 +109,9 @@ collections:
     i18n: true
     summary: "#{{sort}} - {{title}}"
     sortable_fields: ["sort"]
-    fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Body", name: "body", widget: "text", i18n: true }
-  - name: "lets_have_fun"
+    fields: *article
+  - <<: *default
+    name: "lets_have_fun"
     label: "Articles - Let's have fun"
     label_singular: "Let's have fun article" # Used in the UI, ie: "New Post"
     folder: "content/lets_have_fun"
@@ -121,13 +119,9 @@ collections:
     i18n: true
     summary: "#{{sort}} - {{title}}"
     sortable_fields: ["sort"]
-    fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Body", name: "body", widget: "text", i18n: true }
-  - name: "help_us_grow"
+    fields: *article
+  - <<: *default
+    name: "help_us_grow"
     label: "Articles - Help us grow"
     label_singular: "Help us grow article" # Used in the UI, ie: "New Post"
     folder: "content/help_us_grow"
@@ -135,13 +129,9 @@ collections:
     i18n: true
     summary: "#{{sort}} - {{title}}"
     sortable_fields: ["sort"]
-    fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Body", name: "body", widget: "text", i18n: true }
-  - name: "schools"
+    fields: *article
+  - <<: *default
+    name: "schools"
     label: "Articles - Schools"
     label_singular: "Schools article" # Used in the UI, ie: "New Post"
     folder: "content/schools"
@@ -149,23 +139,10 @@ collections:
     i18n: true
     summary: "#{{sort}} - {{title}}"
     sortable_fields: ["sort"]
-    fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Body", name: "body", widget: "text", i18n: true }
-  - name: "about_us"
+    fields: *article
+  - <<: *default
+    name: "about_us"
     label: "Articles - About us"
     label_singular: "About us article" # Used in the UI, ie: "New Post"
     folder: "content/about_us"
-    create: true
-    i18n: true
-    summary: "#{{sort}} - {{title}}"
-    sortable_fields: ["sort"]
-    fields:
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
-      - { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Image", name: "image", widget: "image", required: false, i18n: "duplicate" }
-      - { label: "Body", name: "body", widget: "text", i18n: true }
+    fields: *article
