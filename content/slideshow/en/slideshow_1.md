@@ -1,4 +1,4 @@
 ---
 title: Join us
-image: /assets/home_2.jpg
+image: /assets/whatsapp-image-2022-07-19-at-11.49.16-am.jpeg
 ---
