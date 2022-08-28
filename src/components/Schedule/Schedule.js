@@ -30,6 +30,7 @@ export default function Schedule({ language, schedule }) {
     language === "nl" ? "Weekschema lessen" : "Weekly session schedule";
 
   let data = schedule.map((s) => {
+    console.log(s.details);
     return {
       title: s.details.title,
       day: s.details.day,
