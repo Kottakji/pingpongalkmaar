@@ -1,7 +1,7 @@
 # Ping Pong Alkmaar
 
 ## TODO
-- Send email to remove shop
+- Send email to remove shop of old website
 
 ## CLI Commands
 
