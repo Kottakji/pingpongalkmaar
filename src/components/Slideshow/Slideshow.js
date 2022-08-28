@@ -39,7 +39,7 @@ export default function Slideshow({ slides }) {
       >
         {slides.map((slide, index) => (
           <div
-            className="inline-block w-full h-[36rem] bg-no-repeat bg-cover"
+            className="inline-block w-full h-[36rem] bg-no-repeat bg-cover bg-top bg-black"
             key={index}
             style={{
               backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${slide.details.image})`,

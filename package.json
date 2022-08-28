@@ -40,6 +40,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "immer": "^9.0.15",
+    "jpegtran-bin": "^7.0.0",
     "markdown-to-jsx": "^6.11.4",
     "moment": "^2.29.4",
     "parse-md": "^2.0.4",
