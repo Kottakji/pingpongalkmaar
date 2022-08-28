@@ -29,7 +29,7 @@ i18n:
   default_locale: nl
 backend:
   name: git-gateway
-  branch: master
+  branch: main
 media_folder: src/assets
 public_folder: /assets
 collections:
