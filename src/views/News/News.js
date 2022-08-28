@@ -13,7 +13,6 @@ import Footer from "../../components/Footer/Footer";
 export default function News(props) {
   const [data, isLoading] = usePrerenderData(props);
 
-  console.log("edges", data.edges);
   return (
     <>
       {isLoading && <p>Loading...</p>}

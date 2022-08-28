@@ -24,8 +24,7 @@ function Icons() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
-            t="1569683925316"
+            strokeWidth="0"
             viewBox="0 0 1024 1024"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +42,7 @@ function Icons() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 1024 1024"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -105,8 +104,10 @@ function Links({ language }) {
         <div className="tabs">
           <ul className="menu menu-horizontal bg-base-content">
             <li tabIndex="0">
-              <button className={"btn btn-primary btn-xs rounded-xl text-sm"}>
-                <span className={"relative -top-2.5"}>Menu</span>
+              <button
+                className={"btn btn-primary btn-xs rounded-xl text-sm py-0"}
+              >
+                Menu
               </button>
               <ul className="bg-base-content w-48 z-10">
                 {MENU.map((item, index) => (
