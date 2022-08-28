@@ -34,7 +34,7 @@ export default function Slideshow({ slides }) {
   return (
     <div className="slide-container h-[36rem] overflow-hidden">
       <div
-        className="whitespace-nowrap duration-1000 transition ease-in-out"
+        className="whitespace-nowrap h-[36rem] duration-1000 transition ease-in-out"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {slides.map((slide, index) => (
