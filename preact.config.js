@@ -10,7 +10,7 @@ module.exports = (config, env, helpers) => {
     content: ["./src/**/*.js"],
 
     // Include any special characters you're using in this regular expression
-    defaultExtractor: (content) => [],
+    defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   });
 
   const postCssLoaders = helpers.getLoadersByName(config, "postcss-loader");
