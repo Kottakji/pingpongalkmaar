@@ -3,17 +3,17 @@ export default function SimpleTable({ title, headers, items }) {
     <div className="flex justify-center w-full my-12">
       <div className={"flex flex-col justify-center gap-4"}>
         <h2 className={"text-black text-center"}>{title}</h2>
-        <table className="table">
-          {headers && (
-            <thead>
+        <table className="table overflow-scroll">
+          <tbody>
+            {headers && (
               <tr>
                 {headers.map((header) => (
-                  <th className={"text-black bg-gray-50 border"}>{header}</th>
+                  <td className={"text-black bg-gray-50 border font-bold"}>
+                    {header}
+                  </td>
                 ))}
               </tr>
-            </thead>
-          )}
-          <tbody>
+            )}
             <tr>
               {items.map((item) => (
                 <td className={"text-black bg-gray-50 border"}>{item}</td>

@@ -1,3 +1,5 @@
+import React, { useState, useEffect, useRef, useCallback } from "react";
+
 export default function Header({ language }) {
   return (
     <div
@@ -77,7 +79,7 @@ function CenterText({ language }) {
           <>Join us! Call, message or mail coach Mark Smith</>
         )}
       </p>
-      <p className={"text-sm w-full text-center"}>
+      <p className={"text-sm w-full text-center hidden sm:flex"}>
         0681362917 / info@pingpongalkmaar.nl
       </p>
     </div>
@@ -85,6 +87,8 @@ function CenterText({ language }) {
 }
 
 function Links({ language }) {
+  const [isVisible, setIsVisible] = useState(false);
+
   const MENU = [
     { nl: "Home", en: "Home", href: `/${language}` },
     { nl: "Nieuws", en: "News", href: `/${language}/news` },
@@ -106,12 +110,15 @@ function Links({ language }) {
             <li tabIndex="0">
               <button
                 className={"btn btn-primary btn-xs rounded-xl text-sm py-0"}
+                onClick={() => setIsVisible(!isVisible)}
               >
                 Menu
               </button>
-              <ul className="bg-base-content w-48 z-10">
+              <ul
+                className={`bg-base-content w-48 z-10 ${isVisible && "flex"}`}
+              >
                 {MENU.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className={`${isVisible && "flex"}`}>
                     <a href={item.href}>{item[language]}</a>
                   </li>
                 ))}
