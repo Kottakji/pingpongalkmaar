@@ -1,9 +1,4 @@
-parameters:
-  default: &default
-    create: true
-    i18n: true
-    summary: "#{{sort}} - {{title}}"
-    sortable_fields: ["sort"]
+variables:
   - &title { label: "Title", name: "title", widget: "string", i18n: true }
   - &sort { label: "Sort", name: "sort", widget: "number", value_type: 'int', min: 0, max: 999, default: 999, i18n: false, hint: "Articles will be sorted from low to high number" }
   - &from { label: "From", name: "from", widget: "datetime", i18n: false, date_format: false, time_format: 'HH:mm' }
@@ -14,6 +9,13 @@ parameters:
   - &body{ label: "Body", name: "body", widget: "text", i18n: true }
   - &type { label: "Type", name: "type", widget: "select", i18n: false, options: ["Image right / Text left", "Image left / Text right", "Centered text (no image)"] }
   - &file { label: "File", name: "file", widget: "file", i18n: true }
+
+defaults:
+  default: &default
+    create: true
+    i18n: true
+    summary: "#{{sort}} - {{title}}"
+    sortable_fields: ["sort"]
   article: &article
     - *type
     - *sort
