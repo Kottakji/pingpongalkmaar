@@ -8,6 +8,7 @@ export default function Article({ article }) {
   };
 
   if (!properties.title || !properties.body) {
+    console.log("Empty properties", properties);
     return <></>;
   }
 
@@ -20,8 +21,11 @@ export default function Article({ article }) {
   }
 
   if (properties.type === "Centered text (no image)") {
+    console.log("CenteredText", properties);
     return <CenteredText {...properties} />;
   }
+
+  console.log(properties.type);
 
   return <></>;
 }
@@ -60,4 +64,15 @@ function Content({ title, body, image }) {
   );
 }
 
-function CenteredText({ article }) {}
+function CenteredText({ title, body }) {
+  return (
+    <>
+      <div
+        className={"p-12 flex flex-col justify-center flex-wrap text-center"}
+      >
+        <h2 className={"text-black"}>{title}</h2>
+        <p className={"text-gray-500 whitespace-pre-line"}>{body}</p>
+      </div>
+    </>
+  );
+}
