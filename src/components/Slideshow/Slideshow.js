@@ -32,14 +32,14 @@ export default function Slideshow({ slides }) {
   }
 
   return (
-    <div className="slide-container h-[36rem] overflow-hidden">
+    <div className="slide-container h-[36vw] overflow-hidden">
       <div
-        className="whitespace-nowrap h-[36rem] duration-1000 transition ease-in-out"
+        className="whitespace-nowrap h-[36vw] duration-1000 transition ease-in-out"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {slides.map((slide, index) => (
           <div
-            className="inline-block w-full h-[36rem] bg-no-repeat bg-cover bg-top bg-black"
+            className="inline-block w-full h-[36vw] bg-no-repeat bg-cover bg-top bg-black"
             key={index}
             style={{
               backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${slide.details.image})`,

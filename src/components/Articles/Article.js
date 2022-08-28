@@ -21,7 +21,6 @@ export default function Article({ article }) {
   }
 
   if (properties.type === "Centered text (no image)") {
-    console.log("CenteredText", properties);
     return <CenteredText {...properties} />;
   }
 
@@ -32,7 +31,7 @@ export default function Article({ article }) {
 
 function ImageRight({ title, body, image }) {
   return (
-    <div className={"flex flex-col sm:flex-row-reverse w-full gap-4"}>
+    <div className={"flex flex-col md:flex-row-reverse w-full gap-4"}>
       <Content image={image} body={body} title={title} />
     </div>
   );
@@ -40,7 +39,7 @@ function ImageRight({ title, body, image }) {
 
 function ImageLeft({ title, body, image }) {
   return (
-    <div className={"flex flex-col sm:flex-row w-full gap-4"}>
+    <div className={"flex flex-col md:flex-row w-full gap-4"}>
       <Content image={image} body={body} title={title} />
     </div>
   );
