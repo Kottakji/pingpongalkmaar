@@ -47,7 +47,7 @@ collections:
     label: "Schedule"
     label_singular: "Schedule"
     folder: "content/schedule"
-    summary: "#{{day}} - {{title}}"
+    summary: "#{{day}} - {{from}} - {{until}} - {{title}}"
     sortable_fields: ["day"]
     fields:
       - *title
