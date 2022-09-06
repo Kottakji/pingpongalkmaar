@@ -37,6 +37,9 @@ export default function Schedule({ language, schedule }) {
       time: `${moment(s.details.from).format("HH:mm")} - ${moment(
         s.details.until
       ).format("HH:mm")}`,
+      sortableTime: `${moment(s.details.from).format("HHmm")}${moment(
+        s.details.until
+      ).format("HHmm")}`,
     };
   });
 
@@ -50,7 +53,7 @@ export default function Schedule({ language, schedule }) {
     info.push(
       data
         .filter((item) => item.day.toLowerCase().trim() === date)
-        .sort((item) => item.time)
+        .sort((a, b) => a.sortableTime - b.sortableTime)
         .map((item, index) =>
           index === 0
             ? {
@@ -59,11 +62,13 @@ export default function Schedule({ language, schedule }) {
                   language === "nl" ? item.day : EN_DATES[item.day]
                 ),
                 time: item.time,
+                sortableTime: item.sortableTime,
               }
             : {
                 title: item.title,
                 day: "",
                 time: item.time,
+                sortableTime: item.sortableTime,
               }
         )
     );
