@@ -8,7 +8,11 @@ export default function Table({ title, items, keys, headers = null }) {
             {headers && (
               <tr>
                 {headers.map((header) => (
-                  <td className={"text-black bg-gray-50 border font-bold"}>
+                  <td
+                    className={
+                      "text-black bg-gray-50 border font-bold text-xs md:text-lg"
+                    }
+                  >
                     {header}
                   </td>
                 ))}
@@ -17,7 +21,11 @@ export default function Table({ title, items, keys, headers = null }) {
             {items.map((item) => (
               <tr>
                 {keys.map((key) => (
-                  <td className={"text-black bg-gray-50 border"}>
+                  <td
+                    className={
+                      "text-black bg-gray-50 border text-xs md:text-lg"
+                    }
+                  >
                     {item[key]}
                   </td>
                 ))}
