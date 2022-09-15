@@ -25,7 +25,7 @@ export default function HelpUsGrow(props) {
           <Downloads
             downloads={data.downloads}
             language={data.language}
-            only={"development_plan"}
+            only={"help_us_grow"}
           />
           <Footer language={data.language} />
         </>

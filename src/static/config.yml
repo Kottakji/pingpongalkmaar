@@ -85,7 +85,7 @@ collections:
     fields:
       - *title
       - *file
-      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["agenda", "development_plan"] }
+      - { label: "Type", name: "type", widget: "select", i18n: false, options: ["home", "help_us_grow"] }
   - <<: *default
     name: "home"
     label: "Articles - Home"

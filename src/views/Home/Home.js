@@ -46,7 +46,7 @@ export default function Home(props) {
           <Downloads
             downloads={data.downloads}
             language={data.language}
-            only={"agenda"}
+            only={"home"}
           />
           <Footer language={data.language} />
         </>
