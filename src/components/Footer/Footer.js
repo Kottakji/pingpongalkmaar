@@ -39,7 +39,7 @@ export default function Footer({ language }) {
       <div className={"m-2"}>
         <span className="footer-title">Ping Pong Alkmaar</span>
         <addres>
-          Tochtwaard 18,
+          Tochtwaard 20,
           <br /> 1824 EZ Alkmaar
         </addres>
         <a href={"mailto:info@pingpongalkmaar.nl"}>info@pingpongalkmaar.nl</a>
