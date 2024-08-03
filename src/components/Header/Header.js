@@ -73,14 +73,14 @@ function CenterText({ language }) {
     <div className={"flex flex-col justify-center"}>
       <p className={"text-sm w-full text-center hidden lg:flex"}>
         {language === "nl" && (
-          <>Doe ook mee! Bel, app of mail coach Mark Smith</>
+          <>Doe ook mee! Mail ons op</>
         )}
         {language === "en" && (
-          <>Join us! Call, message or mail coach Mark Smith</>
+          <>Join us! Mail us at</>
         )}
       </p>
       <p className={"text-sm w-full text-center hidden sm:flex"}>
-        0681362917 / info@pingpongalkmaar.nl
+        info@pingpongalkmaar.nl
       </p>
     </div>
   );
