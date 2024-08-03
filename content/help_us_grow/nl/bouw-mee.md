@@ -13,6 +13,6 @@ Wil je meehelpen deze droom waar te maken? We zijn heel blij met grote en kleine
 
 Kun je ons steunen met een sponsorschap of wil je graag op een andere manier bijdragen? We horen heel graag van je.
 
-Bel Coach Mark Smith 0681362917 of mail naar marksmithtabletennis@gmail.com.
+Mail naar info@pingpongalkmaar.nl
 
 Lees alles over onze ambitieuze plannen in het Development Plan 2021-2024
