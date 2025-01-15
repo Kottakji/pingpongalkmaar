@@ -46,11 +46,7 @@ module.exports = () => {
 
   ["nl", "en"].map((language) => {
     routes.push(getRoute(`/${language}`, language, "home"));
-    routes.push(getRoute(`/${language}/news`, language, "news"));
     routes.push(getRoute(`/${language}/lets-play`, language, "lets_play"));
-    routes.push(
-      getRoute(`/${language}/lets-have-fun`, language, "lets_have_fun")
-    );
     routes.push(
       getRoute(`/${language}/help-us-grow`, language, "help_us_grow")
     );

@@ -9,7 +9,6 @@ import AboutUs from "./views/AboutUs/AboutUs";
 import HelpUsGrow from "./views/HelpUsGrow/HelpUsGrow";
 import LetsHaveFun from "./views/LetsHaveFun/LetsHaveFun";
 import LetsPlay from "./views/LetsPlay/LetsPlay";
-import News from "./views/News/News";
 import Schools from "./views/Schools/Schools";
 
 export default class App extends Component {
@@ -31,7 +30,6 @@ export default class App extends Component {
             {/* IMPORTANT: Also updated prerender-urls if you add a url*/}
             {/* NL */}
             <Home path={`/nl`} />
-            <News path={`/nl/news`} />
             <LetsPlay path={`/nl/lets-play`} />
             <LetsHaveFun path={`/nl/lets-have-fun`} />
             <HelpUsGrow path={`/nl/help-us-grow`} />
@@ -40,7 +38,6 @@ export default class App extends Component {
 
             {/* EN */}
             <Home path={`/en`} />
-            <News path={`/en/news`} />
             <LetsPlay path={`/en/lets-play`} />
             <LetsHaveFun path={`/en/lets-have-fun`} />
             <HelpUsGrow path={`/en/help-us-grow`} />

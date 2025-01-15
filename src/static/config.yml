@@ -93,30 +93,10 @@ collections:
     folder: "content/home"
     fields: *article
   - <<: *default
-    name: "news"
-    label: "Articles - News"
-    label_singular: "News article" # Used in the UI, ie: "New Post"
-    folder: "content/news"
-    create: true
-    i18n: true
-    summary: "#{{sort}} - {{title}}"
-    sortable_fields: ["sort"]
-    fields: *article
-  - <<: *default
     name: "lets_play"
     label: "Articles - Let's play"
     label_singular: "Let's play article" # Used in the UI, ie: "New Post"
     folder: "content/lets_play"
-    create: true
-    i18n: true
-    summary: "#{{sort}} - {{title}}"
-    sortable_fields: ["sort"]
-    fields: *article
-  - <<: *default
-    name: "lets_have_fun"
-    label: "Articles - Let's have fun"
-    label_singular: "Let's have fun article" # Used in the UI, ie: "New Post"
-    folder: "content/lets_have_fun"
     create: true
     i18n: true
     summary: "#{{sort}} - {{title}}"

@@ -69,14 +69,8 @@ function Links({ language }) {
 
   const MENU = [
     { nl: "Home", en: "Home", href: `/${language}` },
-    { nl: "Nieuws", en: "News", href: `/${language}/news` },
     { nl: "Doe mee", en: "Let's play", href: `/${language}/lets-play` },
     { nl: "Bouw mee", en: "Help us grow", href: `/${language}/help-us-grow` },
-    {
-      nl: "Feest mee",
-      en: "Let's have fun",
-      href: `/${language}/lets-have-fun`,
-    },
     { nl: "Scholen", en: "Schools", href: `/${language}/schools` },
     { nl: "Over ons", en: "About us", href: `/${language}/about-us` },
   ];
