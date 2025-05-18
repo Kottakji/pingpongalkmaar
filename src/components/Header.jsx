@@ -2,16 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import useTranslation from "@/hooks/useTranslation";
-import Logo from "@/assets/images/logo.png"
-
+import Logo from "@/assets/images/logo.png";
 
 export default function Header() {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
 
-  const NAVIGATION = t('header.navigation')
-  const JOIN = t('header.join')
+  const NAVIGATION = t("header.navigation");
+  const JOIN = t("header.join");
 
   const [toggle, setToggle] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -37,7 +36,7 @@ export default function Header() {
       className={`header-style herder-variant-two
            ${isSticky ? "sticky" : ""} 
            `}>
-      <div className="desktop-menu max-w-[1570px] mx-auto justify-between items-center xl:flex hidden">
+      <div className="desktop-menu max-w-7xl mx-auto justify-between items-center xl:flex hidden">
 
         <div className="main-menu flex items-center ">
           <Link href="/" className="shrink-0">
@@ -54,10 +53,23 @@ export default function Header() {
           <div className="main-menu uppercase ml-4">
             <ul className="flex items-center nav-list">
 
-              {NAVIGATION.map(({url, title}, index) => (
-                <li key={index}>
-                  <Link href={url} className="nav-link">{title}</Link>
-                </li>
+              {NAVIGATION.map(({ title, url = "#", children = [] }, index) => (
+                <Fragment key={index}>
+                  {children.length > 0 ? (
+                    <li className="group/step-one">
+                      <Link href="#" className="nav-link has-dropdown">{title}</Link>
+                      <ul className="nav-dropdown">
+                        {children.map(({ url, title }, index) => (
+                          <li key={index}><Link href={url}>{title}</Link></li>
+                        ))}
+                      </ul>
+                    </li>
+                  ) : (
+                    <li>
+                      <Link href={url} className="nav-link">{title}</Link>
+                    </li>
+                  )}
+                </Fragment>
               ))}
             </ul>
           </div>
@@ -69,14 +81,15 @@ export default function Header() {
         </div>
       </div>
 
-      {/* mobile menu */}
+      {/* mobile menu */
+      }
       <div className="mobile-menu xl:hidden flex justify-between items-center relative">
         <Link href="/" className="shrink-0 max-w-[50px]">
           <Image
             alt="logo"
             width="100"
             height="70"
-            src="/assets/images/logo.png"
+            src={Logo.src}
           />
         </Link>
         <div className="space-x-4 flex items-center">
@@ -92,16 +105,31 @@ export default function Header() {
         </div>
         <div id="mobile-menu" className={`mobil-menu ${toggle ? "mm-active" : ""}`}>
           <ul>
-
-            {NAVIGATION.map(({url, title}, index) => (
-              <li key={index} className="group/step-one">
-                <Link href={url} className="nav-link nav-link-sm">{title}</Link>
-              </li>
+            {NAVIGATION.map(({ title, url = "#", children = [] }, index) => (
+              <Fragment key={index}>
+                {children.length > 0 ? (
+                  <li className="group/step-one">
+                    <Link href="#" className="nav-link nav-link-sm has-dropdown ">{title}</Link>
+                    <ul className="nav-dropdown-sm">
+                      {children.map(({ url, title }, index) => (
+                        <li key={index}><Link href={url}>{title}</Link></li>
+                      ))}
+                    </ul>
+                  </li>
+                ) : (
+                  <li key={index}>
+                    <Link href={url} className="nav-link nav-link-sm">{title}</Link>
+                  </li>
+                )}
+              </Fragment>
             ))}
 
           </ul>
         </div>
       </div>
+      ;
+      ;
     </header>
-  );
+  )
+    ;
 };

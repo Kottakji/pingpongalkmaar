@@ -2,11 +2,8 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
 
-const laybout = (
-  { children }:
-    {
-      children: React.ReactNode
-    }
+const layout = (
+  { children }
 ) => {
   return (
     <>
@@ -19,4 +16,4 @@ const laybout = (
   );
 };
 
-export default laybout;
+export default layout;

@@ -4,9 +4,13 @@
       { "title": "Home", "url": "/"},
       { "title": "Schedule", "url": "/en/schedule"},
       { "title": "Membership", "url": "/en/membership"},
-      { "title": "Youth", "url": "/en/youth"},
-      { "title": "Community", "url": "/en/community"},
-      { "title": "Activities", "url": "/en/activities"},
+      { "title": "Activities",
+        "children": [
+          { "title": "Activities", "url": "/en/activities"},
+          { "title": "Youth", "url": "/en/youth"},
+          { "title": "Community", "url": "/en/community"}
+        ]
+      },
       { "title": "Contact", "url": "/en/contact"}
     ],
     "join": {
