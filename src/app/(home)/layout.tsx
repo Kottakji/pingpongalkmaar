@@ -1,17 +1,22 @@
-import FooterOne from "@/components/layout/FooterOne";
-import HeaderOne from "@/components/layout/HeaderOne";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import React from "react";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
-    return (
-        <>
-            <HeaderOne />
-            <main className="xl:pt-[100px] pt-[72px]">
-                {children}
-            </main>
-            <FooterOne />
-        </>
-    );
-}
+const laybout = (
+  { children }:
+    {
+      children: React.ReactNode
+    }
+) => {
+  return (
+    <>
+      <Header />
+      <main className="bg-[#121316] pb-24 lg:pb-30">
+        {children}
+      </main>
+      <Footer />
+    </>
+  );
+};
 
-
-export default Layout;
+export default laybout;
