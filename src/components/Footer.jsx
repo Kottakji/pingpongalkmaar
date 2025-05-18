@@ -50,11 +50,7 @@ export default function Footer() {
         </div>
         <div className="py-base border-t border-white border-opacity-10">
           <div className="flex md:justify-between flex-wrap text-dark-5 lg:text-base text-sm gap-6 text-center lg:text-start justify-center">
-            <p className="order-2 lg:order-1">{FooterDataOne?.copyrightText}</p>
-            <div className="flex flex-wrap items-center order-1 lg:order-2">
-              <p>We Accept: </p>
-              <div className="ml-[15px]"><img src="/assets/images/others/payment-cards.png" alt="cards" /></div>
-            </div>
+            <p className="order-2 lg:order-1">PingPongAlkmaar | All rights reserved</p>
           </div>
         </div>
       </div>
