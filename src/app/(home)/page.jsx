@@ -1,19 +1,27 @@
-import Hero from "@/components/Hero";
-import { Metadata } from "next";
-import Block from "@/components/Block";
+"use client";
 
-export const metadata = {
-  title: "Ping Pong Alkmaar",
-  description: "A social community",
-  keywords: ["Ping Pong", "Tabletennis", "Community", "Alkmaar"]
-};
+import Hero from "@/components/Hero";
+import Block from "@/components/Block";
+import useTranslation from "@/hooks/useTranslation";
 
 export default function Page() {
+  const { t } = useTranslation();
+
   return (
     <main className="bg-[#121316]">
       <Hero />
-      <Block variant={"image-left"} />
-      <Block variant={"image-right"} />
+
+      {t("home.blocks").map((block, index) => (
+        <Block
+          variant={block.variant}
+          subtitle={block.subtitle}
+          title={block.title}
+          description={block.description}
+          buttonUrl={block.button.url}
+          buttonTitle={block.button.title}
+          image={block.image}
+        />
+      ))}
     </main>
   );
 };

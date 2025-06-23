@@ -1,22 +1,113 @@
 {
   "header": {
     "navigation": [
-      { "title": "Home", "url": "/"},
-      { "title": "Schedule", "url": "/en/schedule"},
-      { "title": "Membership", "url": "/en/membership"},
-      { "title": "Activities",
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "Schedule",
+        "url": "/en/schedule"
+      },
+      {
+        "title": "Membership",
+        "url": "/en/membership"
+      },
+      {
+        "title": "Activities",
         "children": [
-          { "title": "Activities", "url": "/en/activities"},
-          { "title": "Youth", "url": "/en/youth"},
-          { "title": "Community", "url": "/en/community"}
+          {
+            "title": "Activities",
+            "url": "/en/activities"
+          },
+          {
+            "title": "Youth",
+            "url": "/en/youth"
+          },
+          {
+            "title": "Community",
+            "url": "/en/community"
+          }
         ]
       },
-      { "title": "Contact", "url": "/en/contact"}
+      {
+        "title": "Contact",
+        "url": "/en/contact"
+      }
     ],
     "join": {
       "title": "Become a member",
       "url": "/en/join"
     }
+  },
+  "home": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Recreational & performance",
+        "description": "Ping Pong Alkmaar is the most enthusiastic table tennis club in Alkmaar and an ambitious sports association where everyone is welcome.\n\nSince its founding in May 2018, we have grown tremendously. The club has launched several new initiatives, and with our programs that reach out into the neighborhood, we have reached more than 6,000 people in Alkmaar.\n\nThe core of our club consists of 50 regular players, including 30 boys and girls between the ages of 5 and 16. As a member of our club, you can attend training sessions five days a week.",
+        "button": {
+          "title": "More about",
+          "url": "/en/about"
+        },
+        "image": {
+          "alt": "Ping Pong Alkmaar training session",
+          "url": "/assets/images/home.jpg"
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Training hours",
+        "description": "Monday\nCompetition: 18:00 - 20:00\nSeniors: 20:00 - 22:00\n\nTuesday\nSeniors: 19:30 - 21:30\n\nWednesday\nOldstars: 12:30 - 13:30\nYouth players (10 - 17 years): 18:30 - 19:30\nSeniors: 19:30 - 21:30\n\nFriday\nMini-Pingpongers (5 - 9 years): 15:00 - 16:00\nYouth players (10 - 17 years): 16:00 - 17:00\nSeniors: 19:30 - 21:30",
+        "image": {
+          "alt": "Ping Pong Alkmaar training session",
+          "url": "/assets/images/training.jpg"
+        }
+      }
+    ]
+  },
+  "membership": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Memberschip fees",
+        "description": "Youth Non-Competition players (1 session p/week): € 140,00 per year\nYouth Non-Competition players (> 1 session p/week): € 170,00 per year\nYouth Competition players (> 1 session p/week): € 289,00 per year\n\nSenior Non-Competition players (> 1 session p/week): € 160,00 per year\nSenior Competition players (> 1 session p/week): € 215,00 per year",
+        "image": {
+          "alt": "Ping Pong Alkmaar training session",
+          "url": "/assets/images/home.jpg"
+        }
+      },
+      {
+        "variant": "image-right",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Pay to play",
+        "description": "Youth: € 3,50\nGrown-ups: € 7,50",
+        "image": {
+          "alt": "Ping Pong Alkmaar training session",
+          "url": "/assets/images/training.jpg"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Location & Contact info",
+        "description": "Adres: Tochtwaard 20, 1824 EZ Alkmaar, Netherlands\nEmail: info@pingpongalkmaar.nl",
+        "image": {
+          "alt": "Ping Pong Alkmaar training session",
+          "url": "/assets/images/home.jpg"
+        }
+      }
+    ]
   }
-
 }
