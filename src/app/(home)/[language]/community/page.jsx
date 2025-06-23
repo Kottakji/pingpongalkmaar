@@ -1,17 +1,10 @@
-
 import LANGUAGES from "@/helpers/languages";
-import Community from "@/components/Community";
-import Hero from "@/components/Hero";
-import Block from "@/components/Block";
+import Membership from "@/components/Pages/Membership";
+import Activities from "@/components/Pages/Activities";
+import Community from "@/components/Pages/Community";
 
 export default function Page({params}) {
-  return (
-    <main className="bg-[#121316]">
-      <Hero />
-      <Block variant={"image-left"} />
-      <Block variant={"image-right"} />
-    </main>
-  );
+  return <Community/>
 }
 
 export function generateStaticParams() {

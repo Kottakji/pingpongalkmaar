@@ -17,8 +17,8 @@ export default function Page() {
           subtitle={block.subtitle}
           title={block.title}
           description={block.description}
-          buttonUrl={block.button.url}
-          buttonTitle={block.button.title}
+          buttonUrl={block?.button?.url}
+          buttonTitle={block?.button?.title}
           image={block.image}
         />
       ))}

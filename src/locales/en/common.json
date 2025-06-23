@@ -47,13 +47,19 @@
         "subtitle": "Ping Pong Alkmaar",
         "title": "Recreational & performance",
         "description": "Ping Pong Alkmaar is the most enthusiastic table tennis club in Alkmaar and an ambitious sports association where everyone is welcome.\n\nSince its founding in May 2018, we have grown tremendously. The club has launched several new initiatives, and with our programs that reach out into the neighborhood, we have reached more than 6,000 people in Alkmaar.\n\nThe core of our club consists of 50 regular players, including 30 boys and girls between the ages of 5 and 16. As a member of our club, you can attend training sessions five days a week.",
-        "button": {
-          "title": "More about",
-          "url": "/en/about"
-        },
         "image": {
           "alt": "Ping Pong Alkmaar training session",
           "url": "/assets/images/home.jpg"
+        }
+      },
+      {
+        "variant": "image-right",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Competition players",
+        "description": "At Ping Pong Alkmaar you can play competition at different levels. On average, about 20 times a year matches will be played. Both home and away matches. A match will take approximately 3 hours, and home matches take place on a Saturday. The start time of the away matches vary per club.",
+        "image": {
+          "alt": "Ping Pong Alkmaar training session",
+          "url": "/assets/images/training.jpg"
         }
       }
     ]
@@ -106,6 +112,48 @@
         "image": {
           "alt": "Ping Pong Alkmaar training session",
           "url": "/assets/images/home.jpg"
+        }
+      }
+    ]
+  },
+  "activities": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Activities and commitment",
+        "description": "Our commitment to developing table tennis in Alkmaar’s schools is very important to the future growth, sustainability and longer term success of Ping Pong Alkmaar.\n\nThe benefits for school children playing regular table tennis are very clear and positive. Playing table tennis improves hand-eye coordination, balance and motoric movement. Table tennis increases levels of concentration, therefore physical and mentality it is a fantastic activity for the development of young people. Table tennis in a school setting also provides a welcome stress release for pupils in a relaxing social setting. Table tennis has a fun, social and relaxing function.",
+        "image": {
+          "alt": "Ping Pong Alkmaar activity event to Germany",
+          "url": "/assets/images/activities.jpg"
+        }
+      }
+    ]
+  },
+  "community": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Community",
+        "description": "This session is for competition players aiming to reach their full potential. Session intensity is high focusing on technical, tactical and physical development of the players. Players learn to develop a ‘top sport’ mentality to give them the knowledge of high level training methods to reach the higher levels of the game.",
+        "image": {
+          "alt": "Ping Pong Alkmaar training session",
+          "url": "/assets/images/home.jpg"
+        }
+      }
+    ]
+  },
+  "youth": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Youth",
+        "description": "Our junior sessions are inclusive sessions for youngsters of all levels. Sessions are structured to include ‘technical skills’ together with fun games to maximise the enjoyment and therefore improvement levels of our youngsters. Chinese training methods are used during the sessions including ‘multi-ball’ and ‘robot training’ to focus all players on physical and technical areas of the game.",
+        "image": {
+          "alt": "Ping Pong Alkmaar youth players",
+          "url": "/assets/images/youth.jpg"
         }
       }
     ]

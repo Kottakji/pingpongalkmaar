@@ -1,0 +1,161 @@
+{
+  "header": {
+    "navigation": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "Rooster",
+        "url": "/nl/schedule"
+      },
+      {
+        "title": "Lidmaatschap",
+        "url": "/nl/membership"
+      },
+      {
+        "title": "Activiteiten",
+        "children": [
+          {
+            "title": "Activiteiten",
+            "url": "/nl/activities"
+          },
+          {
+            "title": "Jeugd",
+            "url": "/nl/youth"
+          },
+          {
+            "title": "Community",
+            "url": "/nl/community"
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "url": "/nl/contact"
+      }
+    ],
+    "join": {
+      "title": "Lid worden",
+      "url": "/nl/membership"
+    }
+  },
+  "home": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Recreatief & prestatiegericht",
+        "description": "Ping Pong Alkmaar is de meest enthousiaste tafeltennisclub van Alkmaar en een ambitieuze sportvereniging waar iedereen welkom is.\n\nSinds de oprichting in mei 2018 zijn we enorm gegroeid. De club heeft verschillende nieuwe initiatieven gelanceerd, en met onze programma's die de buurt bereiken, hebben we meer dan 6.000 mensen in Alkmaar bereikt.\n\nDe kern van onze club bestaat uit 50 vaste spelers, waaronder 30 jongens en meisjes tussen de 5 en 16 jaar. Als lid van onze club kun je vijf dagen per week naar de trainingen.",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/home.jpg"
+        }
+      },
+      {
+        "variant": "image-right",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Competitiespelers",
+        "description": "Bij Ping Pong Alkmaar kun je competitie spelen op verschillende niveaus. Gemiddeld worden ongeveer 20 keer per jaar wedstrijden gespeeld. Zowel thuis- als uitwedstrijden. Een wedstrijd duurt ongeveer 3 uur, en thuiswedstrijden vinden plaats op zaterdag. De starttijd van de uitwedstrijden varieert per club.",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/training.jpg"
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Trainingstijden",
+        "description": "Maandag\nCompetitie: 18:00 - 20:00\nSenioren: 20:00 - 22:00\n\nDinsdag\nSenioren: 19:30 - 21:30\n\nWoensdag\nOldstars: 12:30 - 13:30\nJeugdspelers (10 - 17 jaar): 18:30 - 19:30\nSenioren: 19:30 - 21:30\n\nVrijdag\nMini-Pingpongers (5 - 9 jaar): 15:00 - 16:00\nJeugdspelers (10 - 17 jaar): 16:00 - 17:00\nSenioren: 19:30 - 21:30",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/training.jpg"
+        }
+      }
+    ]
+  },
+  "membership": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Lidmaatschapstarieven",
+        "description": "Jeugd Niet-Competitiespelers (1 sessie p/week): € 140,00 per jaar\nJeugd Niet-Competitiespelers (> 1 sessie p/week): € 170,00 per jaar\nJeugd Competitiespelers (> 1 sessie p/week): € 289,00 per jaar\n\nSenior Niet-Competitiespelers (> 1 sessie p/week): € 160,00 per jaar\nSenior Competitiespelers (> 1 sessie p/week): € 215,00 per jaar",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/home.jpg"
+        }
+      },
+      {
+        "variant": "image-right",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Per keer betalen",
+        "description": "Jeugd: € 3,50\nVolwassenen: € 7,50",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/training.jpg"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Locatie & Contactgegevens",
+        "description": "Adres: Tochtwaard 20, 1824 EZ Alkmaar, Nederland\nEmail: info@pingpongalkmaar.nl",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/home.jpg"
+        }
+      }
+    ]
+  },
+  "activities": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Activiteiten en betrokkenheid",
+        "description": "Onze betrokkenheid bij het ontwikkelen van tafeltennis op Alkmaarse scholen is zeer belangrijk voor de toekomstige groei, duurzaamheid en langetermijnsucces van Ping Pong Alkmaar.\n\nDe voordelen voor schoolkinderen die regelmatig tafeltennis spelen zijn zeer duidelijk en positief. Tafeltennis spelen verbetert hand-oog coördinatie, balans en motorische beweging. Tafeltennis verhoogt het concentratieniveau, daarom is het fysiek en mentaal een fantastische activiteit voor de ontwikkeling van jongeren. Tafeltennis in een schoolomgeving zorgt ook voor een welkome stressverlichting voor leerlingen in een ontspannen sociale setting. Tafeltennis heeft een leuke, sociale en ontspannende functie.",
+        "image": {
+          "alt": "Ping Pong Alkmaar activiteitenevenement naar Duitsland",
+          "url": "/assets/images/activities.jpg"
+        }
+      }
+    ]
+  },
+  "community": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Community",
+        "description": "Deze sessie is voor competitiespelers die hun volledige potentieel willen bereiken. De sessie-intensiteit is hoog en richt zich op technische, tactische en fysieke ontwikkeling van de spelers. Spelers leren een 'topsport' mentaliteit te ontwikkelen om hen de kennis te geven van trainingsmethoden op hoog niveau om de hogere niveaus van het spel te bereiken.",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/home.jpg"
+        }
+      }
+    ]
+  },
+  "youth": {
+    "blocks": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Jeugd",
+        "description": "Onze juniorsessies zijn inclusieve sessies voor jongeren van alle niveaus. Sessies zijn gestructureerd om 'technische vaardigheden' samen met leuke spelletjes te bevatten om het plezier en daarom de verbeteringsniveaus van onze jongeren te maximaliseren. Chinese trainingsmethoden worden gebruikt tijdens de sessies, inclusief 'multi-ball' en 'robottraining' om alle spelers te richten op fysieke en technische gebieden van het spel.",
+        "image": {
+          "alt": "Ping Pong Alkmaar jeugdspelers",
+          "url": "/assets/images/youth.jpg"
+        }
+      }
+    ]
+  }
+}
