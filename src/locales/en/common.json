@@ -156,5 +156,10 @@
         }
       }
     ]
+  },
+  "footer": {
+    "schedule": "Schedule",
+    "sign-up": "Sign up here",
+    "contact": "Contact"
   }
 }

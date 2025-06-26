@@ -1,10 +1,12 @@
-"use client"
+"use client";
 import FooterDataOne from "@/constant/common/FooterDataOne";
 import Link from "next/link";
 import useLanguage from "@/hooks/useLanguage";
+import useTranslation from "@/hooks/useTranslation";
 
 export default function Footer() {
-  const {language} = useLanguage();
+  const { t } = useTranslation();
+  const { language } = useLanguage();
 
   return (
     <footer className="footer_style__two lg:pt-[60px] pt-11 bg-cover bg-center bg-no-repeat"
@@ -18,9 +20,9 @@ export default function Footer() {
                 <h3 className="text-white lg:text-[25px] text-2md font-semibold lg:leading-1.35">Links</h3>
               </div>
               <ul className="footer-link-list-v2">
-                <li><Link href={`/${language}/schedule`} className="footer-nav-link-v2">Training schedule</Link></li>
-                <li><Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="footer-nav-link-v2" target={"_blank"} >Sign up here</Link></li>
-                <li><Link href={`/${language}/contact`} className="footer-nav-link-v2">Contact</Link></li>
+                <li><Link href={`/${language}/schedule`} className="footer-nav-link-v2">{t("footer.schedule")}</Link></li>
+                <li><Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="footer-nav-link-v2" target={"_blank"}>{t("footer.sign-up")}</Link></li>
+                <li><Link href={`/${language}/contact`} className="footer-nav-link-v2">{t("footer.contact")}</Link></li>
               </ul>
             </div>
           </div>

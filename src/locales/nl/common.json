@@ -157,5 +157,10 @@
         }
       }
     ]
+  },
+  "footer": {
+    "schedule": "Rooster",
+    "sign-up": "Lid worden",
+    "contact": "Contact"
   }
 }
