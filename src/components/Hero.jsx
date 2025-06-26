@@ -42,7 +42,7 @@ export default function Hero() {
                   {slide.description}
                 </p>
                 <div className="lg:mt-10 mt-7">
-                  <Link href="/package-details" className="btn_primary__v1">
+                  <Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="btn_primary__v1" target={"_blank"}>
                     Become a member
                   </Link>
                 </div>

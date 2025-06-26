@@ -75,7 +75,7 @@ export default function Header() {
           </div>
         </div>
         <div className="shrink-0">
-          <Link href={JOIN.url} className="btn_primary__v1 outlined">
+          <Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="btn_primary__v1 outlined" target={"_blank"}>
             {JOIN.title}
           </Link>
         </div>
@@ -127,9 +127,6 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      ;
-      ;
     </header>
-  )
-    ;
+  );
 };

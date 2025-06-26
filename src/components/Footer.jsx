@@ -14,9 +14,9 @@ export default function Footer() {
                 <h3 className="text-white lg:text-[25px] text-2md font-semibold lg:leading-1.35">Links</h3>
               </div>
               <ul className="footer-link-list-v2">
-                <li><Link href="/package-details-2" className="footer-nav-link-v2">Training schedule</Link></li>
-                <li><Link href="/package-details-2" className="footer-nav-link-v2">Sign up here</Link></li>
-                <li><Link href="/package-details-2" className="footer-nav-link-v2">Contact</Link></li>
+                <li><Link href="/en/schedule" className="footer-nav-link-v2">Training schedule</Link></li>
+                <li><Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="footer-nav-link-v2" target={"_blank"} >Sign up here</Link></li>
+                <li><Link href="/en/contact" className="footer-nav-link-v2">Contact</Link></li>
               </ul>
             </div>
           </div>
