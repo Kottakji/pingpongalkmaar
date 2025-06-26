@@ -11,6 +11,7 @@ export default function Youth() {
     <main className="bg-[#121316] py-24">
       {t("youth.blocks").map((block, index) => (
         <Block
+          key={index}
           variant={block.variant}
           subtitle={block.subtitle}
           title={block.title}

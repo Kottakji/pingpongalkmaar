@@ -4,9 +4,6 @@ import clsx from "clsx";
 export default function Block({ subtitle, title, description, buttonTitle = null, buttonUrl = null, variant = "image-left" , image}) {
   return (
     <div className="about_style__two lg:pt-30 pt-24 relative z-1">
-      <div className="absolute top-[5%] left-[1%] max-w-[9%] z-minus lg:inline-block hidden">
-        <img src="./assets/images/illustration/bird-illustration.png" alt="leaf" />
-      </div>
       <div className="container">
         <div className="grid lg:grid-cols-12 gap-base items-center">
           <div className={clsx("lg:col-span-6 text-white", variant === "image-left" && "order-1")}>

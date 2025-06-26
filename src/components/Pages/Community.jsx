@@ -11,6 +11,7 @@ export default function Community() {
     <main className="bg-[#121316] py-24">
       {t("community.blocks").map((block, index) => (
         <Block
+          key={index}
           variant={block.variant}
           subtitle={block.subtitle}
           title={block.title}

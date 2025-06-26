@@ -5,7 +5,7 @@ import Community from "@/components/Pages/Community";
 import Youth from "@/components/Pages/Youth";
 
 export default function Page({params}) {
-  return <Youth/>
+  return <Youth {...params}/>
 }
 
 export function generateStaticParams() {

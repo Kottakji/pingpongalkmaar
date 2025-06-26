@@ -4,12 +4,14 @@ import Hero from "@/components/Hero";
 import Block from "@/components/Block";
 import useTranslation from "@/hooks/useTranslation";
 
-export default function Schedule() {
+export default function Home({language}) {
   const { t } = useTranslation();
 
   return (
-    <main className="bg-[#121316] py-24">
-      {t("schedule.blocks").map((block, index) => (
+    <main className="bg-[#121316]">
+      <Hero />
+
+      {t("home.blocks").map((block, index) => (
         <Block
           key={index}
           variant={block.variant}
@@ -23,4 +25,4 @@ export default function Schedule() {
       ))}
     </main>
   );
-}
+};

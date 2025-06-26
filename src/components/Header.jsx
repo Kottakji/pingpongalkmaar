@@ -5,12 +5,14 @@ import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 import useTranslation from "@/hooks/useTranslation";
 import Logo from "@/assets/images/logo.png";
+import { usePathname } from "next/navigation";
+import useLanguage from "@/hooks/useLanguage";
 
-export default function Header() {
+export default function Header({language}) {
+  const {en, nl} = useLanguage();
   const { t } = useTranslation();
 
   const NAVIGATION = t("header.navigation");
-  const JOIN = t("header.join");
 
   const [toggle, setToggle] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -75,9 +77,17 @@ export default function Header() {
           </div>
         </div>
         <div className="shrink-0">
-          <Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="btn_primary__v1 outlined" target={"_blank"}>
-            {JOIN.title}
-          </Link>
+          <div className={"flex h-full gap-2 items-center"}>
+            <a href={en} className={"inline-block px-4 py-0.5 text-2xl wow fadeIn hover:outline outline-1 outline-[#E8604C]"}>
+              🇬🇧
+            </a>
+            <a href={nl} className={"inline-block px-4 py-0.5 text-2xl wow fadeIn hover:outline outline-1 outline-[#E8604C]"}>
+              🇳🇱
+            </a>
+            <Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="btn_primary__v1 outlined" target={"_blank"}>
+              {t("header.join.title")}
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -123,6 +133,15 @@ export default function Header() {
                 )}
               </Fragment>
             ))}
+
+            <li className={"flex"}>
+              <Link href={nl} className="nav-link nav-link-sm !text-xl">
+                🇳🇱
+              </Link>
+              <Link href={en} className="nav-link nav-link-sm !text-xl">
+                🇬🇧
+              </Link>
+            </li>
 
           </ul>
         </div>

@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Image from "@/assets/images/hero.jpeg";
 import Link from "next/link";
+import useTranslation from "@/hooks/useTranslation";
 
 const SLIDES = [
   {
@@ -15,6 +16,7 @@ const SLIDES = [
 ];
 
 export default function Hero() {
+  const { t } = useTranslation();
 
   const navigation = {
     nextEl: ".hero-next",
@@ -43,7 +45,7 @@ export default function Hero() {
                 </p>
                 <div className="lg:mt-10 mt-7">
                   <Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="btn_primary__v1" target={"_blank"}>
-                    Become a member
+                    {t("header.join.title")}
                   </Link>
                 </div>
               </div>

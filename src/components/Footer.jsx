@@ -1,7 +1,11 @@
+"use client"
 import FooterDataOne from "@/constant/common/FooterDataOne";
 import Link from "next/link";
+import useLanguage from "@/hooks/useLanguage";
 
 export default function Footer() {
+  const {language} = useLanguage();
+
   return (
     <footer className="footer_style__two lg:pt-[60px] pt-11 bg-cover bg-center bg-no-repeat"
             style={{ background: `url("${FooterDataOne?.bgImg2}")` }}
@@ -14,9 +18,9 @@ export default function Footer() {
                 <h3 className="text-white lg:text-[25px] text-2md font-semibold lg:leading-1.35">Links</h3>
               </div>
               <ul className="footer-link-list-v2">
-                <li><Link href="/en/schedule" className="footer-nav-link-v2">Training schedule</Link></li>
+                <li><Link href={`/${language}/schedule`} className="footer-nav-link-v2">Training schedule</Link></li>
                 <li><Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="footer-nav-link-v2" target={"_blank"} >Sign up here</Link></li>
-                <li><Link href="/en/contact" className="footer-nav-link-v2">Contact</Link></li>
+                <li><Link href={`/${language}/contact`} className="footer-nav-link-v2">Contact</Link></li>
               </ul>
             </div>
           </div>
@@ -36,12 +40,12 @@ export default function Footer() {
                         stroke="currentColor" strokeWidth="1.5" />
                     </svg>
                   </div>
-                  <Link href="#" className="leading-1.5 pl-[10px] lg:text-base text-sm">3891
-
+                  <Link href={"mailto:info@pingpongalkmaar.nl"} className="leading-1.5 pl-[10px] lg:text-base text-sm">
+                    3891
                     Tochtwaard 20,<br />
                     1824 EZ Alkmaar<br />
 
-                    <a href={"mailto:info@pingpongalkmaar.nl"}>info@pingpongalkmaar.nl</a>
+                    info@pingpongalkmaar.nl
                   </Link>
                 </li>
               </ul>

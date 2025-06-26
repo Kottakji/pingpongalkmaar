@@ -1,19 +1,24 @@
 "use client";
 import { useState } from "react";
 import ENCommon from "@/locales/en/common.json";
+import NLCommon from "@/locales/nl/common.json";
+import useLanguage from "@/hooks/useLanguage";
 
 const FILES = {
   en: {
     common: ENCommon,
   },
+  nl: {
+    common: NLCommon,
+  },
 };
 
 export default function useTranslation(file = "common") {
-  const [language, setLanguage] = useState("en");
+  const {language} = useLanguage()
 
   const t = (key) => translate(key, language, file);
 
-  return { t, language, setLanguage };
+  return { t, language };
 }
 
 export function translate(key, language = "en", file = "common") {

@@ -3,7 +3,7 @@ import Membership from "@/components/Pages/Membership";
 import Activities from "@/components/Pages/Activities";
 
 export default function Page({params}) {
-  return <Activities/>
+  return <Activities {...params}/>
 }
 
 export function generateStaticParams() {

@@ -2,6 +2,11 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
 
+export const metadata= {
+  title: 'Ping Pong Alkmaar',
+  description: 'Tafeltennisclub in Alkmaar',
+}
+
 const layout = (
   { children }
 ) => {

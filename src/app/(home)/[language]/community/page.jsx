@@ -4,7 +4,7 @@ import Activities from "@/components/Pages/Activities";
 import Community from "@/components/Pages/Community";
 
 export default function Page({params}) {
-  return <Community/>
+  return <Community {...params}/>
 }
 
 export function generateStaticParams() {
