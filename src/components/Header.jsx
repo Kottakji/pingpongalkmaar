@@ -5,11 +5,10 @@ import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 import useTranslation from "@/hooks/useTranslation";
 import Logo from "@/assets/images/logo.png";
-import { usePathname } from "next/navigation";
 import useLanguage from "@/hooks/useLanguage";
 
-export default function Header({language}) {
-  const {en, nl} = useLanguage();
+export default function Header() {
+  const { language, en, nl } = useLanguage();
   const { t } = useTranslation();
 
   const NAVIGATION = t("header.navigation");
@@ -41,7 +40,7 @@ export default function Header({language}) {
       <div className="desktop-menu max-w-7xl mx-auto justify-between items-center xl:flex hidden">
 
         <div className="main-menu flex items-center ">
-          <Link href="/" className="shrink-0">
+          <Link href={language === "nl" ? "/" : "/en"} className="shrink-0">
             <Image
               alt="logo"
               width="100"
@@ -119,26 +118,26 @@ export default function Header({language}) {
               <Fragment key={index}>
                 {children.length > 0 ? (
                   <li className="group/step-one">
-                    <Link href="#" className="nav-link nav-link-sm has-dropdown ">{title}</Link>
+                    <Link href="#" className="nav-link nav-link-sm has-dropdown">{title}</Link>
                     <ul className="ml-3 space-y-4 nav-link nav-link-sm">
                       {children.map(({ url, title }, index) => (
-                        <li key={index}><Link href={url}>{title}</Link></li>
+                        <li key={index}><Link href={url} onClick={() => setToggle(false)}>{title}</Link></li>
                       ))}
                     </ul>
                   </li>
                 ) : (
                   <li key={index}>
-                    <Link href={url} className="nav-link nav-link-sm">{title}</Link>
+                    <Link href={url} onClick={() => setToggle(false)} className="nav-link nav-link-sm">{title}</Link>
                   </li>
                 )}
               </Fragment>
             ))}
 
             <li className={"flex"}>
-              <Link href={nl} className="nav-link nav-link-sm !text-xl">
+              <Link href={nl} onClick={() => setToggle(false)} className="nav-link nav-link-sm !text-xl">
                 🇳🇱
               </Link>
-              <Link href={en} className="nav-link nav-link-sm !text-xl">
+              <Link href={en} onClick={() => setToggle(false)} className="nav-link nav-link-sm !text-xl">
                 🇬🇧
               </Link>
             </li>
