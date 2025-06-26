@@ -110,7 +110,7 @@ export default function Header() {
                 {children.length > 0 ? (
                   <li className="group/step-one">
                     <Link href="#" className="nav-link nav-link-sm has-dropdown ">{title}</Link>
-                    <ul className="nav-dropdown-sm">
+                    <ul className="ml-3 space-y-4 nav-link nav-link-sm">
                       {children.map(({ url, title }, index) => (
                         <li key={index}><Link href={url}>{title}</Link></li>
                       ))}
