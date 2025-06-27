@@ -7,16 +7,17 @@ import Image from "@/assets/images/hero.jpeg";
 import Link from "next/link";
 import useTranslation from "@/hooks/useTranslation";
 
-const SLIDES = [
-  {
-    image: Image,
-    title: "Ping Pong Alkmaar",
-    description: "A social community"
-  }
-];
 
 export default function Hero() {
   const { t } = useTranslation();
+
+  const slides = [
+    {
+      image: Image,
+      title: t('hero.title'),
+      description: t('hero.description')
+    }
+  ];
 
   const navigation = {
     nextEl: ".hero-next",
@@ -32,7 +33,7 @@ export default function Hero() {
         navigation={navigation}
         modules={[Navigation]}
       >
-        {SLIDES.map((slide, index) => (
+        {slides.map((slide, index) => (
           <SwiperSlide className="hero-two-single-slide" key={index}>
             <img src={slide.image.src} alt="cv" className="z-minus absolute w-full h-full object-cover zoom-image brightness-[0.4]" />
             <div className="container">

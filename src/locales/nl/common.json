@@ -40,6 +40,11 @@
       "url": "/nl/membership"
     }
   },
+
+  "hero": {
+    "title": "Ping Pong Alkmaar",
+    "description": "Tafeltennis voor iedereen"
+  },
   "home": {
     "blocks": [
       {
