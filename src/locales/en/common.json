@@ -31,6 +31,10 @@
         ]
       },
       {
+        "title": "House rules",
+        "url": "/en/house-rules"
+      },
+      {
         "title": "Contact",
         "url": "/en/contact"
       }
@@ -63,6 +67,40 @@
         "image": {
           "alt": "Ping Pong Alkmaar training session",
           "url": "/assets/images/training.jpg"
+        }
+      }
+    ]
+  },
+  "house-rules": {
+    "blocks": [
+      {
+        "variant": "image-right",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "General Information",
+        "description": "PPA is not a company, but an association, and the members are collectively responsible for the atmosphere, accessibility and the materials used.\n\nThis makes it natural that as a member you have a number of responsibilities and adhere to a number of reasonable rules.",
+        "image": {
+          "alt": "Ping Pong Alkmaar",
+          "url": "/assets/images/participation.png"
+        }
+      },
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Social Rules",
+        "description": "When it's busy, it's everyone's responsibility to make room or step aside for a moment. If someone has been waiting for 15 minutes, those who have been playing the longest make room for that player(s). This means that if you make room, someone else will make room for you.\n\nMembers who come multiple times a week give sufficient space to members who come less often.\n\nIf you sign up for competition, you are also responsible for hall and bar service according to the schedule. You arrange this with your teammates, or you find someone in your area for a nice and rewarding volunteer service.\n\nFor competition matches, the hall may be used as far as necessary for the match (also for warming up and if a match continues on two tables). The rest of the hall is available for other members.",
+        "image": {
+          "alt": "Ping Pong Alkmaar",
+          "url": "/assets/images/training.jpg"
+        }
+      },
+      {
+        "variant": "image-right",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Material Rules",
+        "description": "Handle the materials with care, take your time to put away a table properly. Store the nets neatly as shown in the instructions. If we handle the equipment carefully, we need to replace these expensive items less often and can keep the membership fees low.\n\nYou must always close the equipment room and place screens in front of it before you start playing. You pick up balls from the equipment room again. After (youth) training, a few members are designated to clean up the balls.\n\nWhen you're finished playing and there's no one else continuing to play on your table, you clean up that table. If you're physically unable to clean up a table, or don't know how, ask someone to help. We help each other.\n\nBalls are not meant to be rolled under a shoe (like a footballer). You may not sit on the tables. Table tennis balls are not intended for throwing at each other (from close range or further away). That's a different sport.\n\nAfter training, participants ensure all balls in the hall and equipment room are cleaned up. After using the hall, the last users clean up all balls (also in equipment room), open the equipment room net, put all tables and screens back neatly, bring flag inside, lock hall with QR code (both halls!).",
+        "image": {
+          "alt": "Ping Pong Alkmaar",
+          "url": "/assets/images/youth.jpg"
         }
       }
     ]
