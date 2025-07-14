@@ -25,8 +25,8 @@
             "url": "/en/youth"
           },
           {
-            "title": "Community",
-            "url": "/en/community"
+            "title": "High level training",
+            "url": "/en/high-level-training"
           }
         ]
       },
@@ -163,12 +163,12 @@
       }
     ]
   },
-  "community": {
+  "high-level-training": {
     "blocks": [
       {
         "variant": "image-left",
         "subtitle": "Ping Pong Alkmaar",
-        "title": "Community",
+        "title": "High level training",
         "description": "This session is for competition players aiming to reach their full potential. Session intensity is high focusing on technical, tactical and physical development of the players. Players learn to develop a ‘top sport’ mentality to give them the knowledge of high level training methods to reach the higher levels of the game.",
         "image": {
           "alt": "Ping Pong Alkmaar training session",

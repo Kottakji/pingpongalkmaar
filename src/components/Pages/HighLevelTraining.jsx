@@ -4,12 +4,12 @@ import Hero from "@/components/Hero";
 import Block from "@/components/Block";
 import useTranslation from "@/hooks/useTranslation";
 
-export default function Community() {
+export default function HighLevelTraining() {
   const { t } = useTranslation();
 
   return (
     <main className="bg-[#121316] py-24">
-      {t("community.blocks").map((block, index) => (
+      {t("high-level-training.blocks").map((block, index) => (
         <Block
           key={index}
           variant={block.variant}
