@@ -74,7 +74,7 @@
         "variant": "image-left",
         "subtitle": "Ping Pong Alkmaar",
         "title": "Trainingstijden",
-        "description": "Maandag\nJeugdtraining: 18:00 - 20:00\nVrijspelen: 20:00 - 23:30\n\nDinsdag\nVrijspelen: 19:30 - 23:30\n\nWoensdag\nOldstars: 12:30 - 13:30\nJeugdtraining: 18:30 - 19:30\nSelectietraining: 19:30 - 21:00\nVrijspelen: 21:00 - 23:30\n\nVrijdag\nMini's: 15:00 - 16:00\nJeugdtraining: 16:00 - 17:00\nVrijspelen: 19:30 - 21:30\nSenioren competitie: 19:30 - 24:00\n\nZaterdag\nJeugdcompetitie: 12:00 - 17:00",
+        "description": "Maandag\nJeugdtraining: 18:00 - 20:00\nVrijspelen: 20:00 - 23:30\n\nDinsdag\nVrijspelen: 19:30 - 23:30\n\nWoensdag\nOldstars: 12:30 - 13:30\nJeugdtraining: 18:30 - 19:30\nSelectietraining: 19:30 - 21:00 (zaal 20)\nVrijspelen: 19:30 - 23:30 (zaal 18 is open t/m 21:30; zaal 20 is vanaf 21:00 beschikbaar)\n\nVrijdag\nMini's: 15:00 - 16:00\nJeugdtraining: 16:00 - 17:00\nVrijspelen: 19:30 - 21:30\nSenioren competitie: 19:30 - 24:00\n\nZaterdag\nJeugdcompetitie: 12:00 - 17:00",
         "image": {
           "alt": "Ping Pong Alkmaar trainingssessie",
           "url": "/assets/images/training.jpg"

@@ -73,7 +73,7 @@
         "variant": "image-left",
         "subtitle": "Ping Pong Alkmaar",
         "title": "Training Times",
-        "description": "Monday\nYouth training: 18:00 - 20:00\nFree play: 20:00 - 23:30\n\nTuesday\nFree play: 19:30 - 23:30\n\nWednesday\nOldstars: 12:30 - 13:30\nYouth training: 18:30 - 19:30\nSelection training: 19:30 - 21:00\nFree play: 21:00 - 23:30\n\nFriday\nMinis: 15:00 - 16:00\nYouth training: 16:00 - 17:00\nFree play: 19:30 - 21:30\nSenior competition: 19:30 - 24:00\n\nSaturday\nYouth competition: 12:00 - 17:00",
+        "description": "Monday\nYouth training: 18:00 - 20:00\nFree play: 20:00 - 23:30\n\nTuesday\nFree play: 19:30 - 23:30\n\nWednesday\nOldstars: 12:30 - 13:30\nYouth training: 18:30 - 19:30\nSelection training: 19:30 - 21:00 (hall 20)\nFree play: 19:30 - 23:30 (hall 18 will be open until 21:30; hall 20 is available from 21:00)\n\nFriday\nMinis: 15:00 - 16:00\nYouth training: 16:00 - 17:00\nFree play: 19:30 - 21:30\nSenior competition: 19:30 - 24:00\n\nSaturday\nYouth competition: 12:00 - 17:00",
         "image": {
           "alt": "Ping Pong Alkmaar training session",
           "url": "/assets/images/training.jpg"
