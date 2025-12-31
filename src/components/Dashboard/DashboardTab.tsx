@@ -1,6 +1,6 @@
-import BookingData from '@/constant/dashboard/BookingData'
-import Link from 'next/link'
-import React from 'react'
+import BookingData from "@/constant/dashboard/BookingData";
+import Link from "next/link";
+import React from "react";
 
 const DashboardTab = () => {
     return (

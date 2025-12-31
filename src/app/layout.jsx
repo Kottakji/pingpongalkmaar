@@ -1,8 +1,8 @@
-import '@/styles/globals.css';
-import { Jost, Playfair_Display, Satisfy } from 'next/font/google';
+import "@/styles/globals.css";
+import { Jost, Playfair_Display, Satisfy } from "next/font/google";
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 
 /*Configure Google Fonts*/
 const jost = Jost({

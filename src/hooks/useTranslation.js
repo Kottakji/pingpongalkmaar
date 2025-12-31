@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import ENCommon from "@/locales/en/common.json";
 import NLCommon from "@/locales/nl/common.json";
 import useLanguage from "@/hooks/useLanguage";

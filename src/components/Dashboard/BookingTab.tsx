@@ -1,4 +1,4 @@
-import BookingData from '@/constant/dashboard/BookingData'
+import BookingData from "@/constant/dashboard/BookingData";
 
 const BookingTab = () => {
 

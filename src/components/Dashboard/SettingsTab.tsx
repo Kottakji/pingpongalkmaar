@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
-import { info } from "console"
-import { useState } from "react"
+import { useState } from "react";
 
 const SettingsTab = () => {
 

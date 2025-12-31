@@ -7,7 +7,6 @@ import Image from "@/assets/images/hero.jpeg";
 import Link from "next/link";
 import useTranslation from "@/hooks/useTranslation";
 
-
 export default function Hero() {
   const { t } = useTranslation();
 

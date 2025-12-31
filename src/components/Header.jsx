@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import useTranslation from "@/hooks/useTranslation";
 import Logo from "@/assets/images/logo.png";
 import useLanguage from "@/hooks/useLanguage";
