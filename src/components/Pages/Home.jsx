@@ -4,12 +4,14 @@ import Hero from "@/components/Hero";
 import Block from "@/components/Block";
 import useTranslation from "@/hooks/useTranslation";
 
-export default function Home({language}) {
+export default function Home({language, children}) {
   const { t } = useTranslation();
 
   return (
     <main className="bg-[#121316]">
       <Hero />
+
+      {children}
 
       {t("home.blocks").map((block, index) => (
         <Block
@@ -23,6 +25,7 @@ export default function Home({language}) {
           image={block.image}
         />
       ))}
+
     </main>
   );
 };
