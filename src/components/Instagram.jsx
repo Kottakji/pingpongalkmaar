@@ -7,9 +7,11 @@ export default function Instagram({ language, posts }) {
 
   return (
     <>
-      {posts.splice(0, 5).map((post, index) => (
+      {posts
+        .sort((a, b) => new Date(b.data) - new Date(a.data))
+        .splice(0, 5).map((post, index) => (
         <Block key={index}
-               title={`Nieuws ${formatDate(post.createdAt)}`}
+               title={`Nieuws ${formatDate(post.date)}`}
                description={post.caption}
                link={{
                  url: post.url,
