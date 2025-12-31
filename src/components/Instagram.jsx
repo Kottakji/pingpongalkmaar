@@ -8,7 +8,7 @@ export default function Instagram({ language, posts }) {
   return (
     <>
       {posts
-        .sort((a, b) => new Date(b.data) - new Date(a.data))
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
         .splice(0, 5).map((post, index) => (
         <Block key={index}
                title={`Nieuws ${formatDate(post.date)}`}

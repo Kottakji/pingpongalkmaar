@@ -33,24 +33,3 @@ export async function getInstagramPosts() {
 
   return await response.json();
 }
-
-export async function getInstagramPostsCached() {
-  if (cache.has("instagram")) return cache.get("instagram");
-
-  const result = await getInstagramPosts();
-
-  // Save in cache
-  cache.set("instagram", result);
-
-  return result;
-}
-
-/**
- * @param id
- * @return {Promise<InstagramPost>}
- */
-export async function getInstagramPostCached(id) {
-  const posts = await getInstagramPostsCached();
-
-  return posts.find((post) => post.id === id);
-}
