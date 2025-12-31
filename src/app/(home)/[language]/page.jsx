@@ -1,4 +1,3 @@
-import LANGUAGES from "@/helpers/languages";
 import Home from "@/components/Pages/Home";
 import { getInstagramPosts} from "@/api/instagram";
 import Instagram from "@/components/Instagram";
