@@ -10,7 +10,7 @@ export default async function Page({ params }) {
   const posts = await getInstagramPosts();
 
   return (<Home language={language}>
-      <Instagram language={language} posts={posts}/>
+    <Instagram language={language} posts={posts}/>
     </Home>
   );
 }

@@ -2,23 +2,18 @@ const cache = new Map();
 
 /**
  * @typedef {Object} InstagramPost
- * @property {string} id - Unique identifier for the post
- * @property {string} url - Direct URL to the Instagram post
- * @property {string} displayUrl - URL of the post's display image
- * @property {string} caption - Post caption/description text
- * @property {number} likesCount - Number of likes on the post
- * @property {number} commentsCount - Number of comments on the post
- * @property {number} timestamp - Unix timestamp of when the post was created
- * @property {string} ownerUsername - Username of the post owner
- * @property {string} ownerFullName - Full name of the post owner
- * @property {boolean} isVideo - Whether the post is a video
- * @property {number} [videoViewCount] - Number of video views (if applicable)
- * @property {string[]} hashtags - Array of hashtags used in the post
- * @property {string[]} mentions - Array of user mentions in the post
- * @property {string} locationName - Name of the tagged location
- * @property {Object} dimensions - Image/video dimensions
- * @property {number} dimensions.height - Height in pixels
- * @property {number} dimensions.width - Width in pixels
+ * @property {string} type - The type of Instagram post (e.g., "Sidecar" for multi-image posts)
+ * @property {string} shortcode - Instagram's unique identifier for the post
+ * @property {string} caption - The full caption text of the post, including emojis and formatting
+ * @property {string} hashtags - Comma-separated list of hashtags used in the post
+ * @property {string} mentions - Comma-separated list of user mentions in the post (empty string if none)
+ * @property {string} url - Full URL to the Instagram post
+ * @property {string} image - Base64-encoded JPEG image data (truncated in example)
+ * @property {string} alt - Alternative text description for the image
+ * @property {string} date - ISO 8601 formatted date string of when the post was published
+ * @property {number} id - Unique database identifier for this record
+ * @property {string} createdAt - ISO 8601 formatted timestamp of when this record was created in the database
+ * @property {string} updatedAt - ISO 8601 formatted timestamp of when this record was last updated in the database
  */
 export async function getInstagramPosts() {
   const response = await fetch(

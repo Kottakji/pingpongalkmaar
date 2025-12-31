@@ -3,15 +3,15 @@ import formatDate from "@/helpers/formatDate";
 
 export default function Instagram({ language, posts }) {
   // Nothing for now
-  if (language !== "nl") return;
+  if (!posts || language !== "nl") return;
 
   return (
     <>
       {posts
-        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .toSorted((a, b) => new Date(b?.date) - new Date(a?.date))
         .splice(0, 5).map((post, index) => (
         <Block key={index}
-               title={`Nieuws ${formatDate(post.date)}`}
+               title={`Nieuws ${formatDate(post?.date)}`}
                description={post.caption}
                link={{
                  url: post.url,
