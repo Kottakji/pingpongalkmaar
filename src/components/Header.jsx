@@ -83,7 +83,7 @@ export default function Header() {
             <a href={nl} className={"inline-block px-4 py-0.5 text-2xl wow fadeIn hover:outline outline-1 outline-[#E8604C]"}>
               🇳🇱
             </a>
-            <Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="btn_primary__v1 outlined" target={"_blank"}>
+            <Link href={`/registration`} className="btn_primary__v1 outlined" target={"_blank"}>
               {t("header.join.title")}
             </Link>
           </div>

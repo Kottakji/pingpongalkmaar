@@ -44,7 +44,7 @@ export default function Hero() {
                   {slide.description}
                 </p>
                 <div className="lg:mt-10 mt-7">
-                  <Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="btn_primary__v1" target={"_blank"}>
+                  <Link href={`/registration`} className="btn_primary__v1" target={"_blank"}>
                     {t("header.join.title")}
                   </Link>
                 </div>

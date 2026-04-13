@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
               <ul className="footer-link-list-v2">
                 <li><Link href={`/${language}/schedule`} className="footer-nav-link-v2">{t("footer.schedule")}</Link></li>
-                <li><Link href={process.env.NEXT_PUBLIC_SIGN_UP_FORM} className="footer-nav-link-v2" target={"_blank"}>{t("footer.sign-up")}</Link></li>
+                <li><Link href={`/registration`} className="footer-nav-link-v2" target={"_blank"}>{t("footer.sign-up")}</Link></li>
                 <li><Link href={`/${language}/contact`} className="footer-nav-link-v2">{t("footer.contact")}</Link></li>
               </ul>
             </div>

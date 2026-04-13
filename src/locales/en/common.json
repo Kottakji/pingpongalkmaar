@@ -40,7 +40,8 @@
       }
     ],
     "join": {
-      "title": "Become a member"
+      "title": "Become a member",
+      "url": "/registration"
     }
   },
   "hero": {
