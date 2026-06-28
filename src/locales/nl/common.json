@@ -52,6 +52,20 @@
     "blocks": [
       {
         "variant": "image-left",
+        "subtitle": "Nieuws",
+        "title": "Alkmaars Kaasstad Tafeltennistoernooi 🧀🏓",
+        "description": "Op zaterdag 1 augustus houden we bij Ping Pong Alkmaar een officieel open rating toernooi (enkel, 18+ of senioren licentie).\n\nEr is een maximum van 40 deelnemers, dus schrijf je snel in!",
+        "button": {
+          "title": "Schrijf je in",
+          "url": "https://www.toernooi.nl/tournament/9F02A94D-C456-437F-BA5B-DCE733F871D3"
+        },
+        "image": {
+          "alt": "Alkmaars Kaasstad Tafeltennistoernooi poster",
+          "url": "/assets/images/blog/kaasdragers-toernooi.jpg"
+        }
+      },
+      {
+        "variant": "image-right",
         "subtitle": "Ping Pong Alkmaar",
         "title": "Recreatief & prestatiegericht",
         "description": "Ping Pong Alkmaar is de meest enthousiaste tafeltennisclub van Alkmaar en een ambitieuze sportvereniging waar iedereen welkom is.\n\nSinds de oprichting in mei 2018 zijn we enorm gegroeid. De club heeft verschillende nieuwe initiatieven gelanceerd, en met onze programma's die de buurt bereiken, hebben we meer dan 6.000 mensen in Alkmaar bereikt.\n\nDe kern van onze club bestaat uit 60 vaste spelers, waaronder 40 jongens en meisjes tussen de 5 en 16 jaar. Als lid van onze club kun je vier dagen per week naar de trainingen.",
@@ -61,7 +75,7 @@
         }
       },
       {
-        "variant": "image-right",
+        "variant": "image-left",
         "subtitle": "Ping Pong Alkmaar",
         "title": "Competitiespelers",
         "description": "Bij Ping Pong Alkmaar kun je competitie spelen op verschillende niveaus. Gemiddeld worden ongeveer 20 keer per jaar wedstrijden gespeeld. Zowel thuis- als uitwedstrijden. Een wedstrijd duurt ongeveer 3 uur, en thuiswedstrijden vinden plaats op zaterdag. De starttijd van de uitwedstrijden varieert per club.",
