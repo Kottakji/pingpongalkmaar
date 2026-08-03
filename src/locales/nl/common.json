@@ -121,7 +121,17 @@
     ]
   },
   "schedule": {
-    "blocks": [
+    "announcement": {
+      "variant": "image-right",
+      "subtitle": "Nieuws",
+      "title": "Nieuwe speel- en trainingstijden vanaf 17 augustus!",
+      "description": "Met de komst van onze nieuwe trainer, Tim Gras, gaan we een mooi nieuw seizoen tegemoet! Dit bracht ook de kans met zich mee om het trainingsschema te vernieuwen.\n\nWat verandert er voor jou?\nBrede trainingen: er zijn vernieuwde blokken voor de jeugd, de jeugdcompetitie, senioren en onze high-level spelers.\nMaandag: senioren kunnen vanaf nu lekker vroeg starten, namelijk al om 19:30 uur.\nDonderdag: speciaal voor beginnende senioren en beginnende competitiespelers staat Tim klaar om jullie techniek naar een hoger niveau te tillen!\n\nHigh-level spelers kunnen zich inschrijven op een formulier in de kantine.\n\nTot 17 augustus gelden nog de huidige tijden hieronder. Vanaf 17 augustus vind je hier het nieuwe schema.",
+      "image": {
+        "alt": "Ping Pong Alkmaar trainingssessie",
+        "url": "/assets/images/training.jpg"
+      }
+    },
+    "blocksOld": [
       {
         "variant": "image-left",
         "subtitle": "Ping Pong Alkmaar",
@@ -137,6 +147,28 @@
         "subtitle": "Ping Pong Alkmaar",
         "title": "Trainingstijden",
         "description": "Zaal 18 zal buiten de competitie dagen soms niet beschikbaar zijn, let op de mededelingen!\n\nNieuw\nAls de competitie op vrijdag afgelopen is kan zaal 20 van 19.30 tot 24.00 gebruikt worden om vrij te spelen, ook in de vakanties. Als de competitie op zaterdag is afgelopen kunnen wij zaal 20 van 12.00 tot 17.00 gebruiken om vrij te spelen of iets te organiseren, ook in de vakanties. Wil je op zaterdag de zaal gebruiken moet je dit melden bij Rob, Ingrid of Johan. Bij jeugdspelers moet er altijd een volwassene aanwezig zijn.\n\nRegels zaalgebruik\nOpen de deur met je QR code en zet de pion tussen de deur en hou je QR code weer bij de QR lezer. De deur gaat dan automatisch op slot als je vertrekt. Met de sleutel in het sleutelkastje kun je de kantine openen. Na afloop ruim alles weer netjes op en doe het rolgordijn van de kantine naar beneden en ook de verlichting in de kantine uitzetten. Doe de sleutel van de kantine weer terug in het sleutelkastje. Het licht in de zaal gaat automatisch uit na de geboekte speeltijd. Haal de pion weer weg en sluit de buitendeur, controleer of de deur van beide zalen op slot zijn.",
+        "image": {
+          "alt": "Ping Pong Alkmaar",
+          "url": "/assets/images/participation.png"
+        }
+      }
+    ],
+    "blocksNew": [
+      {
+        "variant": "image-left",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Trainingstijden",
+        "description": "Maandag\nJeugdtraining: 18:30 - 19:30 (trainers Onno of Joris en Bastien)\nVrijspelen: 19:30 - 23:30\n\nDinsdag\nHigh-level training: 19:00 - 20:30 (Tim Gras, deelname € 50,- per half jaar)\nVrijspelen: 20:30 - 23:30\n\nWoensdag\nOld Stars: 12:30 - 13:30\nKind & ouder/volwassene training: 18:30 - 19:30 (later meer info)\nVrijspelen: 19:30 - 23:30\n\nDonderdag\nJeugdcompetitie training: 18:30 - 20:00 (trainer Tim Gras)\nSeniorentraining: 20:00 - 21:00 (Tim Gras)\n\nVrijdag\nJeugd alle leeftijden: 16:00 - 17:00 (trainers Tim Gras en Bastien)\nSeniorencompetitie: 17:00 - 24:00\nVrijspelen: 19:30 - 21:30 (alleen tijdens de competitie, zaal 18)\n\nZaterdag\nJeugdcompetitie: 12:00 - 17:00\n\nAlle activiteiten vinden plaats in zaal 20, tenzij anders vermeld.",
+        "image": {
+          "alt": "Ping Pong Alkmaar trainingssessie",
+          "url": "/assets/images/training.webp"
+        }
+      },
+      {
+        "variant": "image-right",
+        "subtitle": "Ping Pong Alkmaar",
+        "title": "Zaalindeling en regels",
+        "description": "We trainen dit seizoen in zaal 20. Alleen tijdens de seniorencompetitie op vrijdag breiden we uit: dan openen we ook zaal 18 van 19:30 tot 21:30 uur.\n\nDe seniorencompetitie start op vrijdag 11 september en de laatste wedstrijd is vrijdag 27 november.\n\nAls de competitie op vrijdag afgelopen is kan zaal 20 van 19:30 tot 24:00 gebruikt worden om vrij te spelen, ook in de vakanties. Als de competitie op zaterdag is afgelopen kunnen wij zaal 20 van 12:00 tot 17:00 gebruiken om vrij te spelen of iets te organiseren, ook in de vakanties. Wil je op zaterdag de zaal gebruiken moet je dit melden bij Rob, Ingrid of Johan. Bij jeugdspelers moet er altijd een volwassene aanwezig zijn.\n\nRegels zaalgebruik\nOpen de deur met je QR code en zet de pion tussen de deur en hou je QR code weer bij de QR lezer. De deur gaat dan automatisch op slot als je vertrekt. Met de sleutel in het sleutelkastje kun je de kantine openen. Na afloop ruim alles weer netjes op en doe het rolgordijn van de kantine naar beneden en ook de verlichting in de kantine uitzetten. Doe de sleutel van de kantine weer terug in het sleutelkastje. Het licht in de zaal gaat automatisch uit na de geboekte speeltijd. Haal de pion weer weg en sluit de buitendeur, controleer of de deur van beide zalen op slot zijn.",
         "image": {
           "alt": "Ping Pong Alkmaar",
           "url": "/assets/images/participation.png"

@@ -1,8 +1,8 @@
 import LANGUAGES from "@/helpers/languages";
 import Schedule from "@/components/Pages/Schedule";
 
-export default function Page({params}) {
-  return <Schedule {...params}/>
+export default function Page() {
+  return <Schedule/>
 }
 
 export function generateStaticParams() {

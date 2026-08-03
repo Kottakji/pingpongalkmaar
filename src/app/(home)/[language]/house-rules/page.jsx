@@ -1,8 +1,8 @@
 import LANGUAGES from "@/helpers/languages";
 import HouseRules from "@/components/Pages/HouseRules";
 
-export default function Page({params}) {
-  return <HouseRules {...params}/>
+export default function Page() {
+  return <HouseRules/>
 }
 
 export function generateStaticParams() {
