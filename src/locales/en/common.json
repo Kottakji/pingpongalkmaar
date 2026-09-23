@@ -150,7 +150,7 @@
         "variant": "image-left",
         "subtitle": "Ping Pong Alkmaar",
         "title": "Memberschip fees",
-        "description": "Youth Non-Competition players (1 session p/week): € 156,00 per year\nYouth Non-Competition players (> 1 session p/week): € 186,00 per year\nYouth Competition players (> 1 session p/week): € 318,00 per year\n\nSenior Non-Competition players (> 1 session p/week): € 177,00 per year\nSenior Competition players (> 1 session p/week): € 243,00 per year\n\nOld Stars: € 144,00 per year\n\nThe membership fee is invoiced every six months. You can cancel at the start of each billing period.",
+        "description": "Youth Non-Competition players: € 156,00 per year\nYouth Competition players: € 318,00 per year\n\nSenior Non-Competition players: € 177,00 per year\nSenior Competition players: € 243,00 per year\n\nOld Stars: € 144,00 per year\n\nThe membership fee is invoiced every six months. You can cancel at the start of each billing period.",
         "image": {
           "alt": "Ping Pong Alkmaar training session",
           "url": "/assets/images/home.jpg"
